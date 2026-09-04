@@ -1,28 +1,17 @@
-# AI Career Personal
+# AI Career personal
 
-Estructura de trabajo verificada a partir de la clase UNE2D01:
+Aquí están la estructura completa del plan y los ejemplos que puedes abrir en Visual Studio Code.
 
-- html-css
-- js
-- python
-- proyectos
+## Contenido
 
-## Estado actual
+- [Plan completo de 580 clases](plan-completo/README.md)
+- [Índice navegable](INDICE_COMPLETO.md)
+- [Listado en CSV](clases.csv)
+- [HTML y CSS: ejemplos ya disponibles](html-css/README.md)
+- [JavaScript](js/README.md)
+- [Python](python/README.md)
+- [Proyectos](proyectos/README.md)
 
-La clase activa es UNE2D07: Imágenes, rutas, texto alternativo y dimensiones.
+## Regla de trabajo
 
-## Clases archivadas en esta primera organización
-
-| ID | Estado | Carpeta |
-| --- | --- | --- |
-| UNE2D01 | Completado | html-css/nivel-02-html5-css3-i/UNE2D01-preparacion-entorno |
-| UNE2D02 | Completado | html-css/nivel-02-html5-css3-i/UNE2D02-estructura-html5 |
-| UNE2D03 | Completado | html-css/nivel-02-html5-css3-i/UNE2D03-encabezados-parrafos-comentarios |
-| UNE2D04 | Completado | html-css/nivel-02-html5-css3-i/UNE2D04-formato-texto-jerarquia |
-| UNE2D05 | Completado | html-css/nivel-02-html5-css3-i/UNE2D05-enlaces |
-| UNE2D06 | Completado | html-css/nivel-02-html5-css3-i/UNE2D06-listas |
-| UNE2D07 | En curso | html-css/nivel-02-html5-css3-i/UNE2D07-imagenes |
-| UNE2D09 | Completado | html-css/nivel-02-html5-css3-i/UNE2D09-practica-p1 |
-
-Los ejemplos didácticos están separados de la evidencia original. Las clases futuras se añadirán cuando correspondan según el tracker.
-
+El tracker de Drive continúa siendo la fuente oficial del estado. GitHub sirve para organizar las carpetas, guardar el código y conservar el historial de cambios.

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de contacto</title>
+</head>
+<body>
+  <header>
+    <h1>Solicita información</h1>
+    <p>Completa el formulario para indicar qué servicio necesitas.</p>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <p>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" minlength="3" maxlength="80" autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9+ -]{7,18}" autocomplete="tel" required>
+        </p>
+
+        <p>
+          <label for="fecha">Fecha preferida de contacto</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Solicitud</legend>
+
+        <p>
+          <label for="servicio">Servicio de interés</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="sitio-web">Creación de sitio web</option>
+            <option value="automatizacion">Automatización</option>
+            <option value="consultoria">Consultoría digital</option>
+          </select>
+        </p>
+
+        <p>Medio de contacto preferido</p>
+
+        <p>
+          <input type="radio" id="contacto-correo" name="medio-contacto" value="correo" checked>
+          <label for="contacto-correo">Correo electrónico</label>
+        </p>
+
+        <p>
+          <input type="radio" id="contacto-telefono" name="medio-contacto" value="telefono">
+          <label for="contacto-telefono">Teléfono</label>
+        </p>
+
+        <p>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="8" cols="50" minlength="20" maxlength="500" required></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Acepto que se utilicen estos datos para responder mi solicitud.</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Enviar solicitud</button>
+        <button type="reset">Limpiar formulario</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Formulario de práctica de AI Career.</p>
+  </footer>
+</body>
+</html>

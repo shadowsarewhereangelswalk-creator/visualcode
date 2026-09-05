@@ -29,8 +29,8 @@ ul {
   margin: 10px 25px;
 }
 footer {
-background-color: rgb(238, 213, 24);
 justify-self: center;
+background-color: rgb(238, 213, 24);
 width: 100%;
 padding: 15px;
 }

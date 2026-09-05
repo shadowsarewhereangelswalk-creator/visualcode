@@ -1,0 +1,12 @@
+\set ON_ERROR_STOP on
+\i database.sql
+\conninfo
+\dn
+SET search_path TO une7d07_psql, public;
+\dt
+\d products
+\timing on
+SELECT COUNT(*) AS active_products
+FROM products
+WHERE active = true;
+\timing off

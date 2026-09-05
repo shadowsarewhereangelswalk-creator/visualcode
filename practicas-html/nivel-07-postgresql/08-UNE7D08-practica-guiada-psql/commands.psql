@@ -1,0 +1,22 @@
+\set ON_ERROR_STOP on
+\i database.sql
+\conninfo
+SET search_path TO une7d08_psql_practice, public;
+\dt
+\d departments
+\d employees
+\set selected_department 'Desarrollo'
+SELECT
+    e.employee_id,
+    e.full_name,
+    e.salary
+FROM employees AS e
+INNER JOIN departments AS d
+    ON d.department_id = e.department_id
+WHERE d.department_name = :'selected_department'
+ORDER BY e.salary DESC;
+\pset expanded on
+SELECT *
+FROM employees
+WHERE employee_id = 1;
+\pset expanded off

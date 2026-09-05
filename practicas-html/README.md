@@ -30,4 +30,10 @@ El Nivel 6 contiene 31 clases completas de diseño relacional, CRUD, claves, pro
 
 [Abrir las 31 clases del Nivel 6](nivel-06-mysql/README.md)
 
+## Nivel 7 — PostgreSQL
+
+El Nivel 7 contiene 31 clases completas de modelado Entidad-Relación, CRUD, integridad referencial, triggers, reglas, PL/pgSQL y migración.
+
+[Abrir las 31 clases del Nivel 7](nivel-07-postgresql/README.md)
+
 Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.

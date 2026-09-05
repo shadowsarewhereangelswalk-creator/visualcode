@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block titulo %}Academia Online{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <nav><a href="{{ url_for('catalogo') }}">Cursos</a><a href="{{ url_for('carrito') }}">Carrito</a></nav>
+    <main>{% block contenido %}{% endblock %}</main>
+</body>
+</html>

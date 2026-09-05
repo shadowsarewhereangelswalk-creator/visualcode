@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block titulo %}Portal Flask{% endblock %}</title>
+    <style>
+        body { margin: 0; font-family: system-ui, sans-serif; background: whitesmoke; color: darkslategray; }
+        nav, main { max-width: 900px; margin: auto; padding: 24px; }
+        nav { display: flex; justify-content: space-between; }
+        article { background: white; border-radius: 14px; padding: 20px; margin: 12px 0; }
+    </style>
+</head>
+<body>
+    <nav><strong>Portal Flask</strong><span>Servicio activo</span></nav>
+    <main>{% block contenido %}{% endblock %}</main>
+</body>
+</html>

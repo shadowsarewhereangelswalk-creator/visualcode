@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista persistente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+<main>
+    <p class="etiqueta">SQLite + SQLAlchemy</p>
+    <h1>Lista persistente</h1>
+    {% for categoria, mensaje in get_flashed_messages(with_categories=true) %}<p class="aviso {{ categoria }}">{{ mensaje }}</p>{% endfor %}
+    <form class="crear" action="{{ url_for('crear') }}" method="post">
+        <input name="titulo" maxlength="100" placeholder="Nuevo pendiente" required>
+        <select name="prioridad">{% for prioridad in prioridades|sort %}<option value="{{ prioridad }}">{{ prioridad|capitalize }}</option>{% endfor %}</select>
+        <button type="submit">Agregar</button>
+    </form>
+    <section>
+        {% for pendiente in pendientes %}
+        <article class="{{ 'completado' if pendiente.completado }}">
+            <form action="{{ url_for('alternar', pendiente_id=pendiente.id) }}" method="post"><button class="marca" type="submit">{{ "✓" if pendiente.completado else "○" }}</button></form>
+            <form class="editar" action="{{ url_for('editar', pendiente_id=pendiente.id) }}" method="post">
+                <input name="titulo" value="{{ pendiente.titulo }}" aria-label="Título">
+                <select name="prioridad" aria-label="Prioridad">{% for prioridad in prioridades|sort %}<option value="{{ prioridad }}" {% if pendiente.prioridad == prioridad %}selected{% endif %}>{{ prioridad|capitalize }}</option>{% endfor %}</select>
+                <button type="submit">Guardar</button>
+            </form>
+            <form action="{{ url_for('eliminar', pendiente_id=pendiente.id) }}" method="post"><button class="eliminar" type="submit">Eliminar</button></form>
+        </article>
+        {% else %}<p>No hay pendientes.</p>{% endfor %}
+    </section>
+</main>
+</body>
+</html>

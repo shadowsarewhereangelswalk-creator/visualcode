@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block titulo %}Carrito · Academia Online{% endblock %}
+{% block contenido %}
+<h1>Tu carrito</h1>
+{% if lineas %}
+<section class="lista">
+    {% for linea in lineas %}
+    <article>
+        <div><h2>{{ linea.nombre }}</h2><p>${{ linea.precio }} por unidad</p></div>
+        <form action="{{ url_for('actualizar', codigo=linea.codigo) }}" method="post">
+            <input name="cantidad" type="number" min="0" max="9" value="{{ linea.cantidad }}" aria-label="Cantidad de {{ linea.nombre }}">
+            <button type="submit">Actualizar</button>
+        </form>
+        <strong>${{ linea.subtotal }}</strong>
+    </article>
+    {% endfor %}
+</section>
+<p class="total">Total: ${{ total }}</p>
+<form action="{{ url_for('vaciar') }}" method="post"><button class="secundario" type="submit">Vaciar carrito</button></form>
+{% else %}
+<p>Tu carrito está vacío.</p>
+<a href="{{ url_for('catalogo') }}">Explorar cursos</a>
+{% endif %}
+{% endblock %}

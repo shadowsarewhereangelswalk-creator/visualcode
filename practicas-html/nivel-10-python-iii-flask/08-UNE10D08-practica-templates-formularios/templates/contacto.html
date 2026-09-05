@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block titulo %}Contacto · Estudio Norte{% endblock %}
+{% block contenido %}
+<section class="tarjeta">
+    <div>
+        <p class="etiqueta">Conversemos</p>
+        <h1>Cuéntanos sobre tu proyecto</h1>
+        <p>Completa el formulario y te responderemos con una propuesta clara.</p>
+    </div>
+    <form method="post" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" value="{{ datos.nombre }}" autocomplete="name" required>
+        {% if errores.nombre %}<small>{{ errores.nombre }}</small>{% endif %}
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" value="{{ datos.correo }}" autocomplete="email" required>
+        {% if errores.correo %}<small>{{ errores.correo }}</small>{% endif %}
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required>{{ datos.mensaje }}</textarea>
+        {% if errores.mensaje %}<small>{{ errores.mensaje }}</small>{% endif %}
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
+{% endblock %}

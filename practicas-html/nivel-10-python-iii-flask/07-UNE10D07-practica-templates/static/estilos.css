@@ -1,0 +1,16 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #ecfeff; background: #083344; }
+body { margin: 0; }
+main { width: min(1000px, calc(100% - 40px)); margin: 48px auto; }
+header p { color: #67e8f9; text-transform: uppercase; letter-spacing: .16em; }
+.resumen { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+.indicador, .proyecto { background: #164e63; border: 1px solid #0e7490; border-radius: 18px; padding: 22px; }
+.indicador strong { display: block; font-size: 2rem; }
+.indicador span, .proyecto span { color: #a5f3fc; }
+.proyectos { display: grid; gap: 14px; }
+.proyecto { display: grid; grid-template-columns: 1fr auto minmax(180px, .5fr) 50px; gap: 18px; align-items: center; }
+.proyecto h2 { margin: 6px 0 0; font-size: 1.1rem; }
+.estado { border-radius: 999px; padding: 7px 11px; }
+.activo { background: #0e7490; }
+.completo { background: #166534; }
+progress { width: 100%; accent-color: #22d3ee; }
+@media (max-width: 700px) { .resumen { grid-template-columns: 1fr; } .proyecto { grid-template-columns: 1fr; } }

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1>Cursos disponibles</h1>
+<p>Tienes {{ unidades }} {{ "unidad" if unidades == 1 else "unidades" }} en el carrito.</p>
+<section class="rejilla">
+    {% for codigo, producto in productos.items() %}
+    <article>
+        <h2>{{ producto.nombre }}</h2>
+        <p class="precio">${{ producto.precio }}</p>
+        <form action="{{ url_for('agregar', codigo=codigo) }}" method="post">
+            <button type="submit">Agregar</button>
+        </form>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

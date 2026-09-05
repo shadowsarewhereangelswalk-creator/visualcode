@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block titulo %}Estudio Norte{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
+        <a href="{{ url_for('mensajes') }}">Mensajes</a>
+    </nav>
+    <main>
+        {% with avisos = get_flashed_messages(with_categories=true) %}
+            {% for categoria, aviso in avisos %}
+            <p class="aviso {{ categoria }}">{{ aviso }}</p>
+            {% endfor %}
+        {% endwith %}
+        {% block contenido %}{% endblock %}
+    </main>
+</body>
+</html>

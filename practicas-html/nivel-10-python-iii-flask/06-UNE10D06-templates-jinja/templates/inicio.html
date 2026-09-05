@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block titulo %}Cursos · Academia Flask{% endblock %}
+{% block contenido %}
+<h1>Catálogo de cursos</h1>
+<section class="rejilla">
+    {% for curso in cursos %}
+    <article>
+        <span>{{ curso.nivel }}</span>
+        <h2>{{ curso.nombre }}</h2>
+        <p>{{ curso.horas }} horas de práctica</p>
+        <a href="{{ url_for('detalle', slug=curso.slug) }}">Ver curso</a>
+    </article>
+    {% else %}
+    <p>No hay cursos disponibles.</p>
+    {% endfor %}
+</section>
+{% endblock %}

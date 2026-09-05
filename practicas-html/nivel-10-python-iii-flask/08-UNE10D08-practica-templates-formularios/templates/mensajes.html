@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block titulo %}Mensajes · Estudio Norte{% endblock %}
+{% block contenido %}
+<h1>Mensajes recibidos</h1>
+<section class="lista">
+    {% for mensaje in mensajes %}
+    <article>
+        <h2>{{ mensaje.nombre }}</h2>
+        <a href="mailto:{{ mensaje.correo }}">{{ mensaje.correo }}</a>
+        <p>{{ mensaje.mensaje }}</p>
+        <time>{{ mensaje.fecha }}</time>
+    </article>
+    {% else %}
+    <p>Todavía no hay mensajes.</p>
+    {% endfor %}
+</section>
+{% endblock %}

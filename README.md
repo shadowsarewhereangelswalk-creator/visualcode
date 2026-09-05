@@ -1,10 +1,15 @@
 # Prácticas de HTML — AI Career
 
-Este repositorio contiene las cinco prácticas oficiales del Nivel 2 — HTML5 y CSS3 Nivel I.
+Este repositorio contiene materiales completos de HTML5 y CSS3 organizados por nivel.
 
-Todos los ejercicios incluyen código completo y terminado. Los archivos HTML, CSS y SVG no contienen comentarios ni espacios pendientes.
+Todos los ejercicios incluyen código terminado, sin comentarios ni espacios pendientes.
 
-## Prácticas
+## Contenido
+
+- [Nivel 2 — HTML5 y CSS3 Nivel I](practicas-html/README.md): cinco prácticas oficiales.
+- [Nivel 3 — HTML5 y CSS3 Nivel II](practicas-html/nivel-03-html5-css3-ii/README.md): 30 clases completas.
+
+## Prácticas del Nivel 2
 
 1. [P1 — Página con etiquetas básicas de texto](practicas-html/01-etiquetas-basicas/README.md)
 2. [P2 — Listas, enlaces y multimedia](practicas-html/02-listas-enlaces-multimedia/README.md)

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio guiado de layouts de varias columnas con Flexbox">
+  <title>UNE3D12 | Ejercicio guiado de layouts de varias columnas con Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 3 · Clase 12 · UNE3D12</p>
+      <h1>Ejercicio guiado de layouts de varias columnas con Flexbox</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="dashboard">
+  <div class="dashboard-header">
+    <div>
+      <p class="eyebrow">Práctica guiada</p>
+      <h2>Panel académico multicolumna</h2>
+    </div>
+    <a class="action" href="#actividades">Ver actividades</a>
+  </div>
+  <div class="dashboard-body">
+    <aside class="menu">
+      <h3>Mi espacio</h3>
+      <nav aria-label="Secciones del panel">
+        <a class="active" href="#resumen">Resumen</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#progreso">Progreso</a>
+      </nav>
+    </aside>
+    <section class="workspace" id="resumen">
+      <h3>Resumen del curso</h3>
+      <div class="stats">
+        <article><strong>12</strong><span>Clases</span></article>
+        <article><strong>8</strong><span>Completadas</span></article>
+        <article><strong>67%</strong><span>Progreso</span></article>
+      </div>
+      <div class="tasks" id="actividades">
+        <h3>Actividades recientes</h3>
+        <div class="task"><span>Maquetación semántica</span><strong>Lista</strong></div>
+        <div class="task"><span>Galería accesible</span><strong>Lista</strong></div>
+        <div class="task"><span>Diseño Flexbox</span><strong>En curso</strong></div>
+      </div>
+    </section>
+    <aside class="next" id="progreso">
+      <h3>Siguiente meta</h3>
+      <p>Completar una interfaz adaptable con tres columnas.</p>
+      <div class="progress" aria-label="Progreso 67 por ciento"><span></span></div>
+    </aside>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · HTML5 y CSS3 Nivel II</p>
+    </div>
+  </footer>
+</body>
+</html>

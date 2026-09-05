@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de layouts de varias columnas con Flexbox">
+  <title>UNE3D11 | Fundamentos de layouts de varias columnas con Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 3 · Clase 11 · UNE3D11</p>
+      <h1>Fundamentos de layouts de varias columnas con Flexbox</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="lesson">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Diseños multicolumna con Flexbox</h2>
+  <p>Esta página distribuye navegación lateral, contenido principal y recursos complementarios con contenedores flexibles.</p>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Temario</h3>
+      <nav aria-label="Temario de la clase">
+        <a href="#conceptos">Conceptos</a>
+        <a href="#ejemplos">Ejemplos</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+    </aside>
+    <article class="content" id="conceptos">
+      <h3>Contenido principal</h3>
+      <p>La propiedad <code>flex</code> permite que cada columna crezca o se reduzca según el espacio disponible.</p>
+      <div class="feature-row" id="ejemplos">
+        <section class="feature"><h4>Flexible</h4><p>Las columnas ajustan su ancho sin medidas rígidas.</p></section>
+        <section class="feature"><h4>Ordenado</h4><p>La jerarquía del documento sigue siendo clara.</p></section>
+        <section class="feature"><h4>Adaptable</h4><p>El contenido puede envolverse cuando falta espacio.</p></section>
+      </div>
+    </article>
+    <aside class="resources" id="recursos">
+      <h3>Recursos</h3>
+      <ul>
+        <li>Eje principal</li>
+        <li>Eje transversal</li>
+        <li>Crecimiento flexible</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · HTML5 y CSS3 Nivel II</p>
+    </div>
+  </footer>
+</body>
+</html>

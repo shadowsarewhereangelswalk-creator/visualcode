@@ -8,6 +8,15 @@
 h1, h2, h3 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
 .bloque {
 margin: 15px
+}
+
+body {
+  background-color:darkgray;
+}
+
+main, footer {
+  background-color: beige;
 }

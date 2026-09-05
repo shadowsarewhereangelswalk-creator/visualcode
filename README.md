@@ -1,6 +1,6 @@
 # Prácticas de programación — AI Career
 
-Este repositorio contiene materiales completos de HTML5, CSS3, JavaScript, MySQL y PostgreSQL organizados por nivel.
+Este repositorio contiene materiales completos de HTML5, CSS3, JavaScript, MySQL, PostgreSQL y Python organizados por nivel.
 
 Todos los ejercicios incluyen código terminado, sin comentarios ni espacios pendientes.
 
@@ -12,6 +12,7 @@ Todos los ejercicios incluyen código terminado, sin comentarios ni espacios pen
 - [Nivel 5 — JavaScript Nivel II](practicas-html/nivel-05-javascript-ii/README.md): 30 clases completas.
 - [Nivel 6 — MySQL](practicas-html/nivel-06-mysql/README.md): 31 clases completas.
 - [Nivel 7 — PostgreSQL](practicas-html/nivel-07-postgresql/README.md): 31 clases completas.
+- [Nivel 8 — Python I: Fundamentos](practicas-html/nivel-08-python-i-fundamentos/README.md): 28 clases completas.
 
 ## Prácticas del Nivel 2
 

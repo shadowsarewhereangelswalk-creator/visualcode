@@ -36,4 +36,10 @@ El Nivel 7 contiene 31 clases completas de modelado Entidad-Relación, CRUD, int
 
 [Abrir las 31 clases del Nivel 7](nivel-07-postgresql/README.md)
 
+## Nivel 8 — Python I: Fundamentos
+
+El Nivel 8 contiene 28 clases completas de sintaxis, colecciones, decisiones, ciclos, funciones, archivos, módulos y programación orientada a objetos.
+
+[Abrir las 28 clases del Nivel 8](nivel-08-python-i-fundamentos/README.md)
+
 Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.

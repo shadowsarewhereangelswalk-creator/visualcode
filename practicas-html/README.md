@@ -42,4 +42,10 @@ El Nivel 8 contiene 28 clases completas de sintaxis, colecciones, decisiones, ci
 
 [Abrir las 28 clases del Nivel 8](nivel-08-python-i-fundamentos/README.md)
 
+## Nivel 9 — Python II: Tkinter
+
+El Nivel 9 contiene 31 clases completas de ventanas, controles, Canvas, Text, layouts, diálogos, menús, eventos y conexión MySQL.
+
+[Abrir las 31 clases del Nivel 9](nivel-09-python-ii-tkinter/README.md)
+
 Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.

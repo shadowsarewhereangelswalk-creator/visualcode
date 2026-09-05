@@ -29,6 +29,10 @@ def create_app(configuracion=None):
     if configuracion:
         aplicacion.config.update(configuracion)
 
+    @aplicacion.get("/")
+    def inicio():
+        return {"servicio": "Calculadora probada", "salud": "/salud", "endpoint": "/api/calcular"}
+
     @aplicacion.get("/salud")
     def salud():
         return {"estado": "ok"}

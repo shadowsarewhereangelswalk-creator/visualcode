@@ -52,6 +52,10 @@ def create_app(configuracion=None):
         aplicacion.config.update(configuracion)
     db.init_app(aplicacion)
 
+    @aplicacion.get("/")
+    def inicio():
+        return {"servicio": "API de tareas", "endpoint": "/api/tareas"}
+
     @aplicacion.get("/api/tareas")
     def listar_tareas():
         consulta = db.select(Tarea).order_by(Tarea.id)

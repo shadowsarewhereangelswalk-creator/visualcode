@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de variables con let y const">
+  <title>UNE4D04 | Fundamentos de variables con let y const</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 4 · UNE4D04</p>
+      <h1>Fundamentos de variables con let y const</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Variables con let y const</h2>
+  <p><code>const</code> protege valores que no serán reasignados y <code>let</code> permite actualizar información durante la ejecución.</p>
+  <div class="calculator-layout">
+    <form id="product-form">
+      <div class="field"><label for="product">Producto</label><input id="product" value="Curso de JavaScript" required></div>
+      <div class="field"><label for="price">Precio unitario</label><input id="price" type="number" min="0" step="0.01" value="25" required></div>
+      <div class="field"><label for="quantity">Cantidad</label><input id="quantity" type="number" min="1" value="2" required></div>
+      <button type="submit">Calcular total</button>
+    </form>
+    <aside class="receipt">
+      <p class="eyebrow">Resultado</p>
+      <h3 id="receipt-product">Curso de JavaScript</h3>
+      <dl>
+        <div><dt>Subtotal</dt><dd id="subtotal">$0.00</dd></div>
+        <div><dt>Impuesto fijo</dt><dd id="tax">$0.00</dd></div>
+        <div class="total"><dt>Total</dt><dd id="total">$0.00</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

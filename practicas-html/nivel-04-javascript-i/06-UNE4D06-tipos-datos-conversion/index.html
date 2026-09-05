@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de tipos de datos y conversión de valores">
+  <title>UNE4D06 | Fundamentos de tipos de datos y conversión de valores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 6 · UNE4D06</p>
+      <h1>Fundamentos de tipos de datos y conversión de valores</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Tipos de datos y conversión de valores</h2>
+  <div class="type-lab">
+    <form id="type-form">
+      <div class="field"><label for="raw-value">Valor de entrada</label><input id="raw-value" value="42"></div>
+      <div class="field">
+        <label for="conversion">Convertir a</label>
+        <select id="conversion">
+          <option value="string">String</option>
+          <option value="number" selected>Number</option>
+          <option value="boolean">Boolean</option>
+          <option value="json">Objeto JSON</option>
+        </select>
+      </div>
+      <button type="submit">Inspeccionar valor</button>
+    </form>
+    <div class="output">
+      <h3>Inspector</h3>
+      <dl class="data-grid">
+        <div><dt>Valor original</dt><dd id="original-value"></dd></div>
+        <div><dt>Tipo original</dt><dd id="original-type"></dd></div>
+        <div><dt>Valor convertido</dt><dd id="converted-value"></dd></div>
+        <div><dt>Tipo convertido</dt><dd id="converted-type"></dd></div>
+      </dl>
+      <p id="type-error" class="error" role="alert"></p>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

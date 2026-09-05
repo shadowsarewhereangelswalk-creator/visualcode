@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de vinculación de JavaScript con HTML y uso de la consola">
+  <title>UNE4D02 | Fundamentos de vinculación de JavaScript con HTML y uso de la consola</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 2 · UNE4D02</p>
+      <h1>Fundamentos de vinculación de JavaScript con HTML y uso de la consola</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>HTML, JavaScript y la consola</h2>
+  <p>El documento carga <code>script.js</code> al final del cuerpo. El script encuentra elementos del HTML, escribe en la consola y actualiza esta interfaz.</p>
+  <div class="connection">
+    <div class="status-dot" aria-hidden="true"></div>
+    <div><strong id="connection-status">Comprobando conexión</strong><p id="connection-detail">Espera un momento.</p></div>
+  </div>
+  <div class="controls">
+    <button id="run" type="button">Ejecutar mensaje</button>
+    <button id="count" class="secondary" type="button">Contar ejecuciones</button>
+  </div>
+  <div class="output">
+    <h3>Salida visible</h3>
+    <ul id="messages" class="result-list"></ul>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

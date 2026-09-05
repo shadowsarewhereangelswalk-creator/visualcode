@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de condicionales if, else if y else">
+  <title>UNE4D14 | Fundamentos de condicionales if, else if y else</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 14 · UNE4D14</p>
+      <h1>Fundamentos de condicionales if, else if y else</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Condicionales if, else if y else</h2>
+  <p>Introduce una calificación para ejecutar exactamente una de las ramas disponibles.</p>
+  <form id="grade-form" class="score-form">
+    <div class="field"><label for="score">Calificación de 0 a 100</label><input id="score" type="number" min="0" max="100" value="86" required></div>
+    <button type="submit">Evaluar calificación</button>
+  </form>
+  <div id="grade-result" class="grade-result" aria-live="polite">
+    <span id="grade-letter">B</span>
+    <div><h3 id="grade-title">Muy buen trabajo</h3><p id="grade-detail">Cumpliste los objetivos principales.</p></div>
+  </div>
+  <div class="condition-map">
+    <span>A · 90–100</span><span>B · 80–89</span><span>C · 70–79</span><span>D · 60–69</span><span>F · 0–59</span>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

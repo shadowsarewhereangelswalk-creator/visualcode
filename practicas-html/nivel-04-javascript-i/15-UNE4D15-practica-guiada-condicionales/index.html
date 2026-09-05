@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio guiado de condicionales if, else if y else">
+  <title>UNE4D15 | Ejercicio guiado de condicionales if, else if y else</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 15 · UNE4D15</p>
+      <h1>Ejercicio guiado de condicionales if, else if y else</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Práctica guiada</p>
+  <h2>Calculadora de envío</h2>
+  <form id="shipping-form">
+    <div class="field">
+      <label for="destination">Destino</label>
+      <select id="destination">
+        <option value="local">Zona local</option>
+        <option value="national">Envío nacional</option>
+        <option value="international">Envío internacional</option>
+      </select>
+    </div>
+    <div class="field"><label for="order-value">Valor del pedido</label><input id="order-value" type="number" min="0" step="0.01" value="80" required></div>
+    <div class="field"><label for="weight">Peso en kilogramos</label><input id="weight" type="number" min="0.1" step="0.1" value="2" required></div>
+    <button type="submit">Calcular envío</button>
+  </form>
+  <article class="shipping-result">
+    <div><p class="eyebrow">Método asignado</p><h3 id="shipping-method">Entrega local</h3><p id="shipping-message"></p></div>
+    <strong id="shipping-cost">$0.00</strong>
+  </article>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

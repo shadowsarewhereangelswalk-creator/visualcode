@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio guiado de métodos push, pop y splice">
+  <title>UNE4D27 | Ejercicio guiado de métodos push, pop y splice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 27 · UNE4D27</p>
+      <h1>Ejercicio guiado de métodos push, pop y splice</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Práctica guiada</p>
+  <h2>Administrador de lista de reproducción</h2>
+  <form id="track-form">
+    <div class="field"><label for="track-title">Canción</label><input id="track-title" placeholder="Título" required></div>
+    <div class="field"><label for="track-artist">Artista</label><input id="track-artist" placeholder="Artista" required></div>
+    <button type="submit">Agregar con push</button>
+  </form>
+  <div class="controls">
+    <button id="remove-last" class="secondary" type="button">Quitar última con pop</button>
+    <button id="insert-demo" class="secondary" type="button">Insertar demo con splice</button>
+  </div>
+  <p id="playlist-status" class="output" aria-live="polite"></p>
+  <ol id="playlist" class="playlist"></ol>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

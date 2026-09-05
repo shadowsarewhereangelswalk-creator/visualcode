@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evaluación integral, corrección de errores y cierre del Nivel 4">
+  <title>UNE4D31 | Evaluación integral, corrección de errores y cierre del Nivel 4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 31 · UNE4D31</p>
+      <h1>Evaluación integral, corrección de errores y cierre del Nivel 4</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="evaluation-app">
+  <header class="evaluation-header">
+    <div><p class="eyebrow">Evaluación integral</p><h2>Cierre del Nivel 4</h2><p>Responde las preguntas y revisa las correcciones generadas por JavaScript.</p></div>
+    <div class="score-badge"><strong id="score">0</strong><span>de 8</span></div>
+  </header>
+  <form id="quiz-form">
+    <div id="questions" class="questions"></div>
+    <div class="controls">
+      <button type="submit">Corregir evaluación</button>
+      <button id="reset-quiz" class="secondary" type="button">Reiniciar</button>
+    </div>
+  </form>
+  <section id="evaluation-result" class="evaluation-result" hidden aria-live="polite">
+    <h3 id="result-title"></h3>
+    <p id="result-message"></p>
+    <div class="progress"><span id="result-progress"></span></div>
+    <ol id="corrections"></ol>
+  </section>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

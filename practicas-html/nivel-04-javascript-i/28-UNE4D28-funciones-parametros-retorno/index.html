@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de funciones, parámetros y retorno">
+  <title>UNE4D28 | Fundamentos de funciones, parámetros y retorno</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 28 · UNE4D28</p>
+      <h1>Fundamentos de funciones, parámetros y retorno</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Funciones, parámetros y retorno</h2>
+  <p>El conversor llama funciones independientes, entrega argumentos y usa el valor retornado para actualizar la página.</p>
+  <form id="unit-form">
+    <div class="field"><label for="unit-value">Valor</label><input id="unit-value" type="number" step="any" value="10" required></div>
+    <div class="field">
+      <label for="unit-operation">Conversión</label>
+      <select id="unit-operation">
+        <option value="km-miles">Kilómetros a millas</option>
+        <option value="miles-km">Millas a kilómetros</option>
+        <option value="kg-pounds">Kilogramos a libras</option>
+        <option value="pounds-kg">Libras a kilogramos</option>
+      </select>
+    </div>
+    <button type="submit">Convertir</button>
+  </form>
+  <article class="function-result">
+    <span id="function-call"></span>
+    <strong id="unit-result"></strong>
+    <p id="unit-description"></p>
+  </article>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

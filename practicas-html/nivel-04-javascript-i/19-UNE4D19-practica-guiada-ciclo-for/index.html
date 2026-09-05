@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio guiado de ciclo for">
+  <title>UNE4D19 | Ejercicio guiado de ciclo for</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 19 · UNE4D19</p>
+      <h1>Ejercicio guiado de ciclo for</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Práctica guiada</p>
+  <h2>Generador de tarjetas numeradas</h2>
+  <form id="cards-form" class="inline-form">
+    <div class="field"><label for="card-count">Cantidad de tarjetas</label><input id="card-count" type="number" min="1" max="30" value="8" required></div>
+    <button type="submit">Crear tarjetas</button>
+  </form>
+  <div class="stats-row">
+    <article><span>Total</span><strong id="total-cards">8</strong></article>
+    <article><span>Pares</span><strong id="even-cards">4</strong></article>
+    <article><span>Suma</span><strong id="card-sum">36</strong></article>
+  </div>
+  <div id="generated-cards" class="generated-grid" aria-live="polite"></div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

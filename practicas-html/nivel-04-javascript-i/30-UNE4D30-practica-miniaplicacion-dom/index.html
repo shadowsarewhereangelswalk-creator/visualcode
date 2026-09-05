@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práctica P5: proyecto de mini-aplicación interactiva con el DOM">
+  <title>UNE4D30 | Práctica P5: proyecto de mini-aplicación interactiva con el DOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 30 · UNE4D30</p>
+      <h1>Práctica P5: proyecto de mini-aplicación interactiva con el DOM</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="task-app">
+  <header class="app-header">
+    <div><p class="eyebrow">Práctica P5</p><h2>Organizador de tareas</h2><p>Miniaplicación interactiva creada con JavaScript y el DOM.</p></div>
+    <div class="app-counter"><strong id="pending-count">0</strong><span>pendientes</span></div>
+  </header>
+  <form id="task-form" class="task-form">
+    <div class="field"><label for="task-input">Nueva tarea</label><input id="task-input" placeholder="Escribe una actividad" required></div>
+    <div class="field">
+      <label for="priority">Prioridad</label>
+      <select id="priority"><option value="alta">Alta</option><option value="media" selected>Media</option><option value="baja">Baja</option></select>
+    </div>
+    <button type="submit">Agregar tarea</button>
+  </form>
+  <div class="filter-bar" aria-label="Filtros">
+    <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+    <button type="button" data-filter="pending" aria-pressed="false">Pendientes</button>
+    <button type="button" data-filter="completed" aria-pressed="false">Completadas</button>
+  </div>
+  <ul id="task-list" class="task-list"></ul>
+  <p id="empty-state" class="empty-state" hidden>No hay tareas en este filtro.</p>
+  <footer class="app-footer"><span id="total-count">0 tareas</span><button id="clear-completed" class="secondary" type="button">Eliminar completadas</button></footer>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

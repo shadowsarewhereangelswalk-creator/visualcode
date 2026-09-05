@@ -1,4 +1,4 @@
-# Prácticas de HTML
+# Prácticas de programación
 
 ## Nivel 2 — HTML5 y CSS3 Nivel I
 
@@ -12,8 +12,14 @@
 
 ## Nivel 3 — HTML5 y CSS3 Nivel II
 
-El Nivel 3 contiene 30 clases completas, desde estructura semántica y Flexbox hasta Canvas, animaciones y diseño responsive.
+El Nivel 3 contiene 30 clases completas de estructura semántica, Flexbox, Canvas, animaciones y diseño responsive.
 
 [Abrir las 30 clases del Nivel 3](nivel-03-html5-css3-ii/README.md)
+
+## Nivel 4 — JavaScript Nivel I
+
+El Nivel 4 contiene 31 clases completas de variables, operadores, condicionales, ciclos, arreglos, funciones y DOM.
+
+[Abrir las 31 clases del Nivel 4](nivel-04-javascript-i/README.md)
 
 Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.

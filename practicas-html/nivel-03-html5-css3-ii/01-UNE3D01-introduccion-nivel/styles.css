@@ -11,10 +11,11 @@ margin: 15px;
 }
 body {
   background-color: darkgray;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 main {
+  justify-self: center;
   background-color: beige;
   width: 60%;
   margin: 10px;
@@ -23,4 +24,6 @@ main {
 }
 footer {
 background-color: rgb(238, 213, 24);
+justify-self: center;
+width: 100%;
 }

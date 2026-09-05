@@ -24,4 +24,10 @@ El Nivel 5 contiene 30 clases completas de funciones avanzadas, arreglos funcion
 
 [Abrir las 30 clases del Nivel 5](nivel-05-javascript-ii/README.md)
 
+## Nivel 6 — MySQL
+
+El Nivel 6 contiene 31 clases completas de diseño relacional, CRUD, claves, procedimientos, disparadores, vistas, transacciones y conectores.
+
+[Abrir las 31 clases del Nivel 6](nivel-06-mysql/README.md)
+
 Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.

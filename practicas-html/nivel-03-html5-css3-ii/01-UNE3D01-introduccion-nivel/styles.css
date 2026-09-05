@@ -17,6 +17,9 @@ body {
   background-color:darkgray;
 }
 
-main, footer {
+main {
   background-color: beige;
+  width: 60%;
+  padding: 15px;
+  border-radius: 10px;
 }

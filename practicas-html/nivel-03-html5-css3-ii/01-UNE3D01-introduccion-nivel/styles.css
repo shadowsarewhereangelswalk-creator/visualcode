@@ -7,10 +7,12 @@ h1, h2, h3 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 h1, h2 {
+  
   display: flex;
   justify-self center;
 }
 .bloque {
+
 margin: 15px;
 }
 body {
@@ -19,6 +21,7 @@ body {
   background-color: darkgray;
 }
 main {
+
   justify-self: center;
   background-color: beige;
   width: 60%;

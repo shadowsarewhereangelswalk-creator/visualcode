@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práctica P1: refactorización de código usando map(), filter() y reduce()">
+  <title>UNE5D08 | Práctica P1: refactorización de código usando map(), filter() y reduce()</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 8 · UNE5D08</p>
+      <h1>Práctica P1: refactorización de código usando map(), filter() y reduce()</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Práctica P1</p>
+  <h2>Catálogo refactorizado con map, filter y reduce</h2>
+  <form id="catalog-form">
+    <div class="field">
+      <label for="category">Categoría</label>
+      <select id="category"><option value="all">Todas</option><option value="curso">Cursos</option><option value="recurso">Recursos</option></select>
+    </div>
+    <div class="field"><label for="max-price">Precio máximo</label><input id="max-price" type="number" min="0" value="100"></div>
+    <div class="field"><label for="catalog-discount">Descuento</label><input id="catalog-discount" type="number" min="0" max="50" value="10"></div>
+    <button type="submit">Procesar catálogo</button>
+  </form>
+  <div class="pipeline">
+    <span>filter()</span><strong id="filtered-count"></strong><span>map()</span><strong id="mapped-count"></strong><span>reduce()</span><strong id="reduced-total"></strong>
+  </div>
+  <div id="product-grid" class="product-grid"></div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

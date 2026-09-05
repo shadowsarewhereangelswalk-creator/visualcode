@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de persistencia con LocalStorage">
+  <title>UNE5D29 | Fundamentos de persistencia con LocalStorage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 29 · UNE5D29</p>
+      <h1>Fundamentos de persistencia con LocalStorage</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Persistencia con LocalStorage</h2>
+  <p>Guarda preferencias en el navegador, recarga la página y comprueba que los valores permanecen.</p>
+  <div class="settings-layout">
+    <form id="settings-form">
+      <div class="field"><label for="saved-name">Nombre visible</label><input id="saved-name" value="Karen" required></div>
+      <div class="field"><label for="saved-theme">Tema</label><select id="saved-theme"><option value="light">Claro</option><option value="dark">Oscuro</option></select></div>
+      <div class="field"><label for="saved-accent">Color de acento</label><input id="saved-accent" type="color" value="#2563eb"></div>
+      <div class="controls"><button type="submit">Guardar preferencias</button><button id="clear-settings" class="secondary" type="button">Borrar datos</button></div>
+    </form>
+    <article id="settings-preview" class="settings-preview">
+      <div class="avatar" id="saved-initial">K</div>
+      <h3 id="saved-greeting">Hola, Karen</h3>
+      <p>Estas preferencias se recuperan desde LocalStorage.</p>
+      <code id="storage-preview"></code>
+    </article>
+  </div>
+  <p id="storage-status" class="output" aria-live="polite"></p>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

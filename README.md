@@ -9,6 +9,7 @@ Todos los ejercicios incluyen código terminado, sin comentarios ni espacios pen
 - [Nivel 2 — HTML5 y CSS3 Nivel I](practicas-html/README.md): cinco prácticas oficiales.
 - [Nivel 3 — HTML5 y CSS3 Nivel II](practicas-html/nivel-03-html5-css3-ii/README.md): 30 clases completas.
 - [Nivel 4 — JavaScript Nivel I](practicas-html/nivel-04-javascript-i/README.md): 31 clases completas.
+- [Nivel 5 — JavaScript Nivel II](practicas-html/nivel-05-javascript-ii/README.md): 30 clases completas.
 
 ## Prácticas del Nivel 2
 

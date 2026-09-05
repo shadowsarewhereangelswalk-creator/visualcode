@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de funciones anónimas y callbacks">
+  <title>UNE5D04 | Fundamentos de funciones anónimas y callbacks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 4 · UNE5D04</p>
+      <h1>Fundamentos de funciones anónimas y callbacks</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Funciones anónimas y callbacks</h2>
+  <p>Selecciona una operación. La función principal recibe otra función como argumento y la ejecuta cuando termina la espera.</p>
+  <form id="callback-form">
+    <div class="field"><label for="callback-value">Valor</label><input id="callback-value" type="number" value="9" required></div>
+    <div class="field">
+      <label for="callback-operation">Callback</label>
+      <select id="callback-operation"><option value="double">Duplicar</option><option value="square">Cuadrado</option><option value="half">Mitad</option></select>
+    </div>
+    <button type="submit">Ejecutar callback</button>
+  </form>
+  <div class="callback-flow">
+    <span>Entrada</span><strong id="callback-input">9</strong><span>Callback</span><strong id="callback-name">Duplicar</strong><span>Salida</span><strong id="callback-result">18</strong>
+  </div>
+  <p id="callback-status" class="output" aria-live="polite">Listo para ejecutar.</p>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

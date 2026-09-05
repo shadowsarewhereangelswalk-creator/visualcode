@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de promesas con then y catch">
+  <title>UNE5D21 | Fundamentos de promesas con then y catch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 21 · UNE5D21</p>
+      <h1>Fundamentos de promesas con then y catch</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Promesas con then y catch</h2>
+  <form id="promise-form">
+    <div class="field"><label for="promise-delay">Espera en milisegundos</label><input id="promise-delay" type="number" min="200" max="3000" value="900" required></div>
+    <div class="field"><label for="promise-result">Resultado simulado</label><select id="promise-result"><option value="success">Resolver</option><option value="failure">Rechazar</option></select></div>
+    <button type="submit">Crear promesa</button>
+  </form>
+  <div class="promise-flow">
+    <article id="state-pending"><span>1</span><strong>Pendiente</strong></article>
+    <article id="state-resolved"><span>2</span><strong>then()</strong></article>
+    <article id="state-rejected"><span>3</span><strong>catch()</strong></article>
+  </div>
+  <p id="promise-message" class="output" aria-live="polite">La promesa aún no se ha ejecutado.</p>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

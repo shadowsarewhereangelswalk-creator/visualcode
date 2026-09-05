@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práctica P3: consumo de una API externa con async/await">
+  <title>UNE5D20 | Práctica P3: consumo de una API externa con async/await</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 20 · UNE5D20</p>
+      <h1>Práctica P3: consumo de una API externa con async/await</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="api-app">
+  <header class="api-header"><div><p class="eyebrow">Práctica P3</p><h2>Directorio de usuarios desde una API</h2><p>La aplicación consume datos externos con fetch, async y await.</p></div><button id="load-users" type="button">Cargar usuarios</button></header>
+  <div class="api-toolbar">
+    <div class="field"><label for="user-search">Buscar por nombre o ciudad</label><input id="user-search" type="search" placeholder="Filtrar resultados" disabled></div>
+    <span id="api-status" role="status">Pulsa el botón para consultar la API.</span>
+  </div>
+  <div id="user-grid" class="user-grid"></div>
+  <button id="retry-users" class="secondary retry" type="button" hidden>Reintentar consulta</button>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

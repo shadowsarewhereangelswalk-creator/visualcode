@@ -11,6 +11,8 @@ margin: 15px;
 }
 body {
   background-color: darkgray;
+  display: flex;
+  justify-content: center;
 }
 main {
   background-color: beige;

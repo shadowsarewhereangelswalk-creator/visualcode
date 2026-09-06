@@ -1,5 +1,7 @@
 # Prácticas de programación
 
+Índice principal de las soluciones de referencia del diplomado. Las carpetas siguen los IDs y temas del tracker oficial `Plan_Clases`.
+
 ## Nivel 2 — HTML5 y CSS3 Nivel I
 
 | Número | ID oficial | Práctica | Archivos |
@@ -12,50 +14,50 @@
 
 ## Nivel 3 — HTML5 y CSS3 Nivel II
 
-[Abrir las 30 clases del Nivel 3](nivel-03-html5-css3-ii/README.md)
+[Abrir Nivel 3](nivel-03-html5-css3-ii/README.md)
 
 ## Nivel 4 — JavaScript Nivel I
 
-[Abrir las 31 clases del Nivel 4](nivel-04-javascript-i/README.md)
+[Abrir Nivel 4](nivel-04-javascript-i/README.md)
 
 ## Nivel 5 — JavaScript Nivel II
 
-[Abrir las 30 clases del Nivel 5](nivel-05-javascript-ii/README.md)
+[Abrir Nivel 5](nivel-05-javascript-ii/README.md)
 
 ## Nivel 6 — MySQL
 
-[Abrir las 31 clases del Nivel 6](nivel-06-mysql/README.md)
+[Abrir Nivel 6](nivel-06-mysql/README.md)
 
 ## Nivel 7 — PostgreSQL
 
-[Abrir las 31 clases del Nivel 7](nivel-07-postgresql/README.md)
+[Abrir Nivel 7](nivel-07-postgresql/README.md)
 
 ## Nivel 8 — Python I: Fundamentos
 
-[Abrir las 28 clases del Nivel 8](nivel-08-python-i-fundamentos/README.md)
+[Abrir Nivel 8](nivel-08-python-i-fundamentos/README.md)
 
 ## Nivel 9 — Python II: Tkinter
 
-[Abrir las 31 clases del Nivel 9](nivel-09-python-ii-tkinter/README.md)
+[Abrir Nivel 9](nivel-09-python-ii-tkinter/README.md)
 
 ## Nivel 10 — Python III: Flask
 
-[Abrir las 30 clases del Nivel 10](nivel-10-python-iii-flask/README.md)
+[Abrir Nivel 10](nivel-10-python-iii-flask/README.md)
 
 ## Nivel 11 — Python IV: Django
 
-[Abrir las 31 clases del Nivel 11](nivel-11-python-iv-django/README.md)
+[Abrir Nivel 11](nivel-11-python-iv-django/README.md)
 
 ## Nivel 12 — Testing, buenas prácticas y despliegue
 
-[Abrir las 30 clases del Nivel 12](nivel-12-testing-buenas-practicas-despliegue/README.md)
+[Abrir Nivel 12](nivel-12-testing-buenas-practicas-despliegue/README.md)
 
 ## Nivel 13 — IA para Programadores
 
-[Abrir las 31 clases del Nivel 13](nivel-13-ia-para-programadores/README.md)
+[Abrir Nivel 13](nivel-13-ia-para-programadores/README.md)
 
 ## Nivel 14 — Proyecto en Programación
 
-[Abrir las 31 clases del Nivel 14](nivel-14-proyecto-programacion/README.md)
+[Abrir Nivel 14](nivel-14-proyecto-programacion/README.md)
 
-Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.
+Cada carpeta contiene una solución de referencia. Algunas prácticas necesitan instalar dependencias, configurar una base de datos, proporcionar credenciales de una API o realizar un despliegue externo antes de poder ejecutar todas sus funciones.

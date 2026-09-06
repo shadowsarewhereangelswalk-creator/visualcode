@@ -37,7 +37,8 @@ body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20p
 </table>
 </main>
 <script>
-async function cargar(){const r=await fetch('/api/solicitudes');const datos=await r.json();filas.innerHTML=datos.map(x=>`<tr><td>${x.id}</td><td>${x.nombre}</td><td>${x.categoria}</td><td>${x.fuente}</td></tr>`).join('')}
+function celda(texto){const td=document.createElement('td');td.textContent=String(texto);return td}
+async function cargar(){const r=await fetch('/api/solicitudes');const datos=await r.json();const filasNuevas=datos.map(x=>{const tr=document.createElement('tr');tr.append(celda(x.id),celda(x.nombre),celda(x.categoria),celda(x.fuente));return tr});filas.replaceChildren(...filasNuevas)}
 formulario.addEventListener('submit',async e=>{e.preventDefault();estado.textContent='Procesando...';const r=await fetch('/api/solicitudes',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nombre:nombre.value,correo:correo.value,mensaje:mensaje.value})});const d=await r.json();estado.textContent=r.ok?`Guardado como ${d.categoria} (${d.fuente})`:d.error;if(r.ok){formulario.reset();cargar()}})
 cargar()
 </script>

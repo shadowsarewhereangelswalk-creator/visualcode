@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Archivos estáticos</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"><script src="{% static 'core/interaccion.js' %}" defer></script></head>
+<body><main><section class="hero"><p>Práctica Django</p><h1>Archivos estáticos organizados</h1><button id="alternar">Cambiar tema</button></section><section class="rejilla">{% for recurso in recursos %}<article>{{ recurso }}</article>{% endfor %}</section></main></body>
+</html>
+

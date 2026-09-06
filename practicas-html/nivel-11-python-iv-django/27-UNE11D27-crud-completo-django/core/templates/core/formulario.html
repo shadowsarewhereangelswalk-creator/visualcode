@@ -1,0 +1,3 @@
+{% extends "core/base.html" %}
+{% block contenido %}<h1>Guardar producto</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>Guardar</button></form>{% endblock %}
+

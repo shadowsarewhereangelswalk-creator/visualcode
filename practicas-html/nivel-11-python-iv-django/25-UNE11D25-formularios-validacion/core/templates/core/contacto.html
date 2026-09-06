@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Formulario validado</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"></head>
+<body><main><section class="hero"><h1>Contacto validado</h1>{% for mensaje in messages %}<p>{{ mensaje }}</p>{% endfor %}</section><form method="post" novalidate>{% csrf_token %}{{ formulario.as_p }}<button>Enviar</button></form></main></body>
+</html>
+

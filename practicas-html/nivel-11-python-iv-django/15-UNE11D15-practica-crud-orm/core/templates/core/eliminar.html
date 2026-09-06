@@ -1,0 +1,3 @@
+{% extends "core/base.html" %}
+{% block contenido %}<h1>Eliminar contacto</h1><p>¿Deseas eliminar a {{ contacto.nombre }}?</p><form method="post">{% csrf_token %}<button>Confirmar</button></form>{% endblock %}
+

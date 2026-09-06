@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Evaluación integral</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"></head>
+<body><main><section class="hero"><h1>Evaluación integral Django</h1><p>Formulario, modelo, ORM, vista, template y API funcionando juntos.</p></section><form method="post">{% csrf_token %}{{ formulario.as_p }}<button>Crear incidencia</button></form><section class="rejilla">{% for incidencia in incidencias %}<article><h2>{{ incidencia.titulo }}</h2><p>{{ incidencia.get_prioridad_display }} · {{ incidencia.resuelta|yesno:"Resuelta,Pendiente" }}</p></article>{% empty %}<p>No hay incidencias.</p>{% endfor %}</section></main></body>
+</html>
+

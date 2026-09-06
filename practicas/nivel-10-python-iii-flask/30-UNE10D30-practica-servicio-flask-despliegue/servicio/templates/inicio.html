@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block contenido %}
+<section class="hero">
+    <div>
+        <p class="etiqueta">Servicio web Flask</p>
+        <h1>Convierte una idea en una solución digital</h1>
+        <p>Cuéntanos qué necesitas y organizaremos el siguiente paso.</p>
+    </div>
+    <form method="post" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" value="{{ datos.get('nombre', '') }}" autocomplete="name">
+        {% if errores.nombre %}<small>{{ errores.nombre }}</small>{% endif %}
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" value="{{ datos.get('correo', '') }}" autocomplete="email">
+        {% if errores.correo %}<small>{{ errores.correo }}</small>{% endif %}
+        <label for="servicio">Servicio</label>
+        <select id="servicio" name="servicio">
+            <option value="">Selecciona una opción</option>
+            {% for codigo, nombre in servicios.items() %}<option value="{{ codigo }}" {% if datos.get('servicio') == codigo %}selected{% endif %}>{{ nombre }}</option>{% endfor %}
+        </select>
+        {% if errores.servicio %}<small>{{ errores.servicio }}</small>{% endif %}
+        <label for="mensaje">Objetivo</label>
+        <textarea id="mensaje" name="mensaje" rows="5">{{ datos.get('mensaje', '') }}</textarea>
+        {% if errores.mensaje %}<small>{{ errores.mensaje }}</small>{% endif %}
+        <button type="submit">Enviar solicitud</button>
+    </form>
+</section>
+{% endblock %}

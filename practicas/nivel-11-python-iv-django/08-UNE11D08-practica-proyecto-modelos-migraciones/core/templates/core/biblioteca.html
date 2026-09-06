@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Biblioteca Django</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"></head>
+<body><main><h1>Biblioteca Django</h1><section class="rejilla"><form method="post">{% csrf_token %}<input type="hidden" name="tipo" value="autor">{{ autor_form.as_p }}<button type="submit">Crear autor</button></form><form method="post">{% csrf_token %}<input type="hidden" name="tipo" value="libro">{{ libro_form.as_p }}<button type="submit">Crear libro</button></form></section><section>{% for autor in autores %}<article><h2>{{ autor.nombre }}</h2><ul>{% for libro in autor.libros.all %}<li>{{ libro.titulo }} · {{ libro.publicado }}</li>{% empty %}<li>Sin libros</li>{% endfor %}</ul></article>{% empty %}<p>No hay autores.</p>{% endfor %}</section></main></body>
+</html>
+

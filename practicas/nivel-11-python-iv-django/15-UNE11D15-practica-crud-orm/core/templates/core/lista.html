@@ -1,0 +1,3 @@
+{% extends "core/base.html" %}
+{% block contenido %}<h1>Contactos</h1><form method="get"><input name="q" value="{{ busqueda }}" placeholder="Buscar"><button>Buscar</button></form><section class="rejilla">{% for contacto in contactos %}<article><h2>{{ contacto.nombre }}</h2><p>{{ contacto.correo }}</p><div class="acciones"><a href="{% url 'editar' contacto.pk %}">Editar</a><a href="{% url 'eliminar' contacto.pk %}">Eliminar</a></div></article>{% empty %}<p>No hay contactos.</p>{% endfor %}</section>{% endblock %}
+

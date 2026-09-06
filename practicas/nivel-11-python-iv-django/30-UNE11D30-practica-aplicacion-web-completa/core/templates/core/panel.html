@@ -1,0 +1,4 @@
+{% extends "core/base.html" %}
+{% block titulo %}Panel de solicitudes{% endblock %}
+{% block contenido %}<h1>Solicitudes</h1><div class="acciones"><a href="{% url 'panel' %}">Todas</a><a href="?estado=nueva">Nuevas</a><a href="?estado=contactada">Contactadas</a><a href="?estado=cerrada">Cerradas</a></div><section class="rejilla">{% for solicitud in solicitudes %}<article><h2>{{ solicitud.nombre }}</h2><p>{{ solicitud.servicio }} · {{ solicitud.correo }}</p><p>{{ solicitud.mensaje }}</p><form action="{% url 'estado' solicitud.pk %}" method="post">{% csrf_token %}<select name="estado"><option value="nueva">Nueva</option><option value="contactada">Contactada</option><option value="cerrada">Cerrada</option></select><button>Actualizar</button></form></article>{% empty %}<p>No hay solicitudes.</p>{% endfor %}</section>{% endblock %}
+

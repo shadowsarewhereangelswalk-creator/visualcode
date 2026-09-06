@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block contenido %}
+<header>
+    <p>Vista general</p>
+    <h1>Panel de proyectos</h1>
+</header>
+<section class="resumen">
+    {{ indicador("Proyectos", resumen.total) }}
+    {{ indicador("Activos", resumen.activos) }}
+    {{ indicador("Avance medio", resumen.promedio|porcentaje) }}
+</section>
+<section class="proyectos">
+    {% for proyecto in proyectos %}
+    <article class="proyecto">
+        <div>
+            <span>{{ proyecto.categoria }}</span>
+            <h2>{{ proyecto.nombre }}</h2>
+        </div>
+        <p class="estado {{ 'activo' if proyecto.activo else 'completo' }}">
+            {{ "En curso" if proyecto.activo else "Finalizado" }}
+        </p>
+        <progress max="100" value="{{ proyecto.avance }}">{{ proyecto.avance|porcentaje }}</progress>
+        <strong>{{ proyecto.avance|porcentaje }}</strong>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

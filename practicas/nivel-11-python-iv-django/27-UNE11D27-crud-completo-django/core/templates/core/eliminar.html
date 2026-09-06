@@ -1,0 +1,3 @@
+{% extends "core/base.html" %}
+{% block contenido %}<h1>Eliminar {{ object.nombre }}</h1><form method="post">{% csrf_token %}<button>Confirmar</button></form>{% endblock %}
+

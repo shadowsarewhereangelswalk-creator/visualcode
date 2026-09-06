@@ -1,0 +1,4 @@
+{% extends "core/base.html" %}
+{% load core_tags %}
+{% block contenido %}<h1>Panel de proyectos</h1>{% indicador "Proyectos" proyectos|length %}{% indicador "Avance medio" promedio %}<section class="rejilla">{% for proyecto in proyectos %}<article><h2>{{ proyecto.nombre }}</h2><p>{{ proyecto.estado|estado_texto }}</p><progress max="100" value="{{ proyecto.avance }}">{{ proyecto.avance }}</progress></article>{% empty %}<p>No hay proyectos.</p>{% endfor %}</section>{% endblock %}
+

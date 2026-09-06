@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de clases y constructores">
+  <title>UNE5D27 | Fundamentos de clases y constructores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 27 · UNE5D27</p>
+      <h1>Fundamentos de clases y constructores</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Clases y constructores</h2>
+  <form id="course-form">
+    <div class="field"><label for="course-name">Curso</label><input id="course-name" placeholder="Nombre del curso" required></div>
+    <div class="field"><label for="course-hours">Duración en horas</label><input id="course-hours" type="number" min="1" value="12" required></div>
+    <div class="field"><label for="course-price">Precio</label><input id="course-price" type="number" min="0" step="0.01" value="45" required></div>
+    <button type="submit">Construir objeto</button>
+  </form>
+  <div class="constructor-flow"><code>new Course(nombre, horas, precio)</code><span id="instance-count"></span></div>
+  <div id="course-grid" class="course-grid"></div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

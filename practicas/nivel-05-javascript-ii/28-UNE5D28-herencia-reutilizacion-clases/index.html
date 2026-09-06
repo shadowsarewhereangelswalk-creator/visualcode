@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de herencia y reutilización de clases">
+  <title>UNE5D28 | Fundamentos de herencia y reutilización de clases</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 28 · UNE5D28</p>
+      <h1>Fundamentos de herencia y reutilización de clases</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Herencia y reutilización de clases</h2>
+  <form id="vehicle-form">
+    <div class="field"><label for="vehicle-brand">Marca</label><input id="vehicle-brand" value="Nexo" required></div>
+    <div class="field"><label for="vehicle-model">Modelo</label><input id="vehicle-model" value="Urban" required></div>
+    <div class="field"><label for="vehicle-type">Subclase</label><select id="vehicle-type"><option value="electric">Vehículo eléctrico</option><option value="cargo">Vehículo de carga</option></select></div>
+    <div class="field"><label for="vehicle-extra">Autonomía o capacidad</label><input id="vehicle-extra" type="number" min="1" value="320" required></div>
+    <button type="submit">Crear vehículo</button>
+  </form>
+  <div class="inheritance"><span>Vehicle</span><strong>extends</strong><span>ElectricVehicle</span><span>CargoVehicle</span></div>
+  <div id="vehicle-grid" class="vehicle-grid"></div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

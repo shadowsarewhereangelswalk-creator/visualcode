@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de manejo de errores con try, catch y finally">
+  <title>UNE5D25 | Fundamentos de manejo de errores con try, catch y finally</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 25 · UNE5D25</p>
+      <h1>Fundamentos de manejo de errores con try, catch y finally</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Manejo de errores con try, catch y finally</h2>
+  <div class="json-layout">
+    <form id="json-form">
+      <div class="field"><label for="json-input">Texto JSON</label><textarea id="json-input" rows="10">{"curso":"JavaScript II","nivel":5,"activo":true}</textarea></div>
+      <div class="controls"><button type="submit">Analizar JSON</button><button id="invalid-sample" class="secondary" type="button">Cargar ejemplo inválido</button></div>
+    </form>
+    <article id="json-result" class="json-result">
+      <p class="eyebrow">Resultado</p>
+      <h3 id="json-title">Esperando análisis</h3>
+      <pre id="json-output"></pre>
+      <p id="finally-message"></p>
+    </article>
+  </div>
+  <div class="stats-row"><article><span>Intentos</span><strong id="attempts">0</strong></article><article><span>Correctos</span><strong id="successes">0</strong></article><article><span>Errores</span><strong id="failures">0</strong></article></div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

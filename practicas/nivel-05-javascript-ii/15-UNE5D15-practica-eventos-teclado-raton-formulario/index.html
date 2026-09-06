@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práctica P2: aplicación con eventos de teclado, ratón y formulario">
+  <title>UNE5D15 | Práctica P2: aplicación con eventos de teclado, ratón y formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 15 · UNE5D15</p>
+      <h1>Práctica P2: aplicación con eventos de teclado, ratón y formulario</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="event-app">
+  <header class="event-header"><div><p class="eyebrow">Práctica P2</p><h2>Centro de eventos</h2><p>Interactúa con teclado, ratón y formulario en una sola aplicación.</p></div><strong id="event-total">0 eventos</strong></header>
+  <div class="event-grid">
+    <section class="event-zone">
+      <h3>Ratón y puntero</h3>
+      <div id="pointer-area" class="pointer-area" tabindex="0"><span id="pointer-dot"></span><strong id="pointer-coordinates">x: 0 · y: 0</strong></div>
+      <button id="pointer-click" type="button">Registrar clic</button>
+    </section>
+    <section class="event-zone">
+      <h3>Teclado</h3>
+      <div id="key-display" class="key-display" tabindex="0"><span>Presiona una tecla aquí</span><strong id="pressed-key">—</strong></div>
+    </section>
+    <section class="event-zone">
+      <h3>Formulario</h3>
+      <form id="event-form"><div class="field"><label for="event-name">Nombre del evento</label><input id="event-name" placeholder="Ejemplo: Entrega final" required></div><button type="submit">Enviar formulario</button></form>
+    </section>
+  </div>
+  <section class="event-history"><h3>Historial</h3><ol id="event-log"></ol></section>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

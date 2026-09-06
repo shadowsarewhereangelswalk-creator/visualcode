@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práctica P5: proyecto de aplicación con persistencia en LocalStorage">
+  <title>UNE5D30 | Práctica P5: proyecto de aplicación con persistencia en LocalStorage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 30 · UNE5D30</p>
+      <h1>Práctica P5: proyecto de aplicación con persistencia en LocalStorage</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="notes-app">
+  <header class="notes-header">
+    <div><p class="eyebrow">Práctica P5</p><h2>Bloc de notas persistente</h2><p>Las notas permanecen guardadas en este navegador.</p></div>
+    <strong id="notes-count">0 notas</strong>
+  </header>
+  <form id="note-form">
+    <div class="field"><label for="note-title">Título</label><input id="note-title" placeholder="Título de la nota" required></div>
+    <div class="field"><label for="note-category">Categoría</label><select id="note-category"><option>Estudio</option><option>Proyecto</option><option>Idea</option></select></div>
+    <div class="field full-field"><label for="note-content">Contenido</label><textarea id="note-content" rows="4" placeholder="Escribe la información" required></textarea></div>
+    <button type="submit">Guardar nota</button>
+  </form>
+  <div class="notes-toolbar">
+    <div class="field"><label for="note-search">Buscar</label><input id="note-search" type="search" placeholder="Filtrar notas"></div>
+    <label class="check-row"><input id="pinned-only" type="checkbox"> Solo fijadas</label>
+    <button id="clear-notes" class="secondary" type="button">Eliminar todas</button>
+  </div>
+  <p id="notes-status" class="output" role="status"></p>
+  <div id="notes-grid" class="notes-grid"></div>
+  <p id="empty-notes" class="empty-state" hidden>No hay notas que coincidan con el filtro.</p>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

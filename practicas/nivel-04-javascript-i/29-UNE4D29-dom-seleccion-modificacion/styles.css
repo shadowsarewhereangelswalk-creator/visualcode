@@ -1,0 +1,1 @@
+body{font-family:system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 20px}#catalogo{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}.tarjeta{border:1px solid #ddd;border-radius:12px;padding:16px;cursor:pointer}.tarjeta:hover{background:#f5f7fb}

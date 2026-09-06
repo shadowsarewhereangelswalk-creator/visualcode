@@ -55,7 +55,7 @@ def aviso(mensaje):
 
 def es_externa(valor):
     valor = valor.strip()
-    return not valor or valor.startswith(("http://", "https://", "mailto:", "tel:", "data:", "#", "javascript:", "{{", "{%"))
+    return not valor or valor.startswith(("/", "http://", "https://", "mailto:", "tel:", "data:", "#", "javascript:", "{{", "{%"))
 
 
 def limpiar_destino(destino):
@@ -198,12 +198,7 @@ def main():
     validar_nivel_2()
     validar_niveles()
     validar_archivos()
-    resultado = {
-        "errores": len(ERRORES),
-        "avisos": len(AVISOS),
-        "detalle_errores": ERRORES,
-        "detalle_avisos": AVISOS,
-    }
+    resultado = {"errores": len(ERRORES), "avisos": len(AVISOS), "detalle_errores": ERRORES, "detalle_avisos": AVISOS}
     print(json.dumps(resultado, ensure_ascii=False, indent=2))
     return 1 if ERRORES else 0
 

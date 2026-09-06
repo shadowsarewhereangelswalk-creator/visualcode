@@ -1,8 +1,0 @@
-\set ON_ERROR_STOP on
-DROP DATABASE IF EXISTS une7d12_academy;
-CREATE DATABASE une7d12_academy
-    WITH ENCODING 'UTF8'
-    TEMPLATE template0;
-\connect une7d12_academy
-\i database.sql
-\dt une7d12_academy.*

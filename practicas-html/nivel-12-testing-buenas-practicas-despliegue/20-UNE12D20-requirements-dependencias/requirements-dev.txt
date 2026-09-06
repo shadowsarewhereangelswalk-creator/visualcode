@@ -1,4 +1,0 @@
--r requirements.txt
-black>=25.1,<27
-ruff>=0.12,<1
-

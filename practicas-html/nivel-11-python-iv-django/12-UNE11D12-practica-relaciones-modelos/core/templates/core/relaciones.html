@@ -1,6 +1,0 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clientes y proyectos</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"></head>
-<body><main><h1>Clientes y proyectos</h1><section class="rejilla"><form method="post">{% csrf_token %}<input type="hidden" name="tipo" value="cliente">{{ cliente_form.as_p }}<button>Crear cliente</button></form><form method="post">{% csrf_token %}<input type="hidden" name="tipo" value="proyecto">{{ proyecto_form.as_p }}<button>Crear proyecto</button></form></section><section>{% for cliente in clientes %}<article><h2>{{ cliente.nombre }}</h2><ul>{% for proyecto in cliente.proyectos.all %}<li>{{ proyecto.nombre }} · {{ proyecto.get_estado_display }}</li>{% empty %}<li>Sin proyectos</li>{% endfor %}</ul></article>{% empty %}<p>No hay clientes.</p>{% endfor %}</section></main></body>
-</html>
-

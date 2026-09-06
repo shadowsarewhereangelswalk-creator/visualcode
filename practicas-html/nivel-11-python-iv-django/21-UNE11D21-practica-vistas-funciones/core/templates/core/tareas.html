@@ -1,6 +1,0 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tareas</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"></head>
-<body><main><h1>Tareas</h1><form action="{% url 'crear' %}" method="post">{% csrf_token %}{{ formulario.as_p }}<button>Crear</button></form><section>{% for tarea in tareas %}<article><h2>{{ tarea.titulo }}</h2><p>{{ tarea.completada|yesno:"Completada,Pendiente" }}</p><div class="acciones"><form action="{% url 'alternar' tarea.pk %}" method="post">{% csrf_token %}<button>Alternar</button></form><form action="{% url 'eliminar' tarea.pk %}" method="post">{% csrf_token %}<button>Eliminar</button></form></div></article>{% empty %}<p>No hay tareas.</p>{% endfor %}</section></main></body>
-</html>
-

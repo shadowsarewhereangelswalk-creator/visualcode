@@ -1,6 +1,0 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Productos</title>{% load static %}<link rel="stylesheet" href="{% static 'core/estilos.css' %}"></head>
-<body><main><h1>Productos</h1><form action="{% url 'crear' %}" method="post">{% csrf_token %}<input name="nombre" placeholder="Nombre" required><input name="categoria" placeholder="Categoría" required><input name="precio" type="number" min="0" step="0.01" placeholder="Precio" required><input name="stock" type="number" min="0" placeholder="Stock" required><button type="submit">Guardar</button></form><section class="rejilla">{% for producto in productos %}<article><h2>{{ producto.nombre }}</h2><p>{{ producto.categoria }} · USD {{ producto.precio }} · {{ producto.stock }} unidades</p></article>{% empty %}<p>No hay productos.</p>{% endfor %}</section></main></body>
-</html>
-

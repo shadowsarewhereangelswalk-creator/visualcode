@@ -1,4 +1,0 @@
-{% extends "core/base.html" %}
-{% block titulo %}Agenda{% endblock %}
-{% block contenido %}<h1>Agenda</h1><section class="rejilla">{% for reserva in reservas %}<article><h2>{{ reserva.nombre }}</h2><p>{{ reserva.get_servicio_display }} · {{ reserva.fecha }}</p><a href="mailto:{{ reserva.correo }}">{{ reserva.correo }}</a></article>{% empty %}<p>No hay reservas.</p>{% endfor %}</section>{% endblock %}
-

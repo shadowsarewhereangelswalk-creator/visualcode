@@ -1,3 +1,0 @@
-{% extends "core/base.html" %}
-{% block contenido %}<h1>Productos</h1><section class="rejilla">{% for producto in productos %}<article><h2>{{ producto.nombre }}</h2><p>{{ producto.categoria }} · USD {{ producto.precio }}</p><div class="acciones"><a href="{% url 'editar' producto.pk %}">Editar</a><a href="{% url 'eliminar' producto.pk %}">Eliminar</a></div></article>{% empty %}<p>No hay productos.</p>{% endfor %}</section>{% endblock %}
-

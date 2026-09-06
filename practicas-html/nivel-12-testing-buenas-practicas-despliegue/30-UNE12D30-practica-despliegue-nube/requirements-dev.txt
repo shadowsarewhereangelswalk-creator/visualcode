@@ -1,6 +1,0 @@
--r requirements.txt
-black>=25.1,<27
-coverage>=7.10,<8
-pytest>=8.4,<10
-ruff>=0.12,<1
-

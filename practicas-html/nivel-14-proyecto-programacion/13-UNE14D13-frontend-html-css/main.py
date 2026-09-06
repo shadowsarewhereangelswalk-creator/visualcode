@@ -1,4 +1,0 @@
-from pathlib import Path
-html='''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="styles.css"><title>Solicitudes</title></head><body><main><h1>Nueva solicitud</h1><form><input name="nombre" placeholder="Nombre" required><input type="email" name="correo" placeholder="Correo" required><textarea name="mensaje" required></textarea><button>Enviar</button></form></main></body></html>'''
-css='''body{font-family:system-ui;margin:0;background:#f4f4f4}main{max-width:720px;margin:40px auto;background:white;padding:24px}input,textarea,button{display:block;width:100%;box-sizing:border-box;margin:12px 0;padding:12px}'''
-Path("index.html").write_text(html,encoding="utf-8"); Path("styles.css").write_text(css,encoding="utf-8"); print("Frontend creado")

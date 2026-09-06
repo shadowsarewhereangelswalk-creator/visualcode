@@ -1,3 +1,0 @@
-{% extends "core/base.html" %}
-{% block contenido %}<section class="hero"><h1>Soluciones digitales con Django</h1><p>Explora los servicios y envía una solicitud.</p></section><section class="rejilla">{% for servicio in servicios %}<article><h2>{{ servicio.nombre }}</h2><p>{{ servicio.descripcion }}</p><strong>Desde USD {{ servicio.precio_desde }}</strong></article>{% empty %}<p>No hay servicios activos.</p>{% endfor %}</section><h2>Solicitar propuesta</h2><form method="post">{% csrf_token %}{{ formulario.as_p }}<button>Enviar solicitud</button></form>{% endblock %}
-

@@ -1,6 +1,0 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Noticias Django</title></head>
-<body><main><h1>Noticias Django</h1>{% for noticia in noticias %}<article><h2>{{ noticia.titulo }}</h2><a href="{% url 'detalle' noticia.id %}">Abrir JSON</a></article>{% endfor %}</main></body>
-</html>
-

@@ -1,6 +1,6 @@
 # Prácticas de programación — AI Career
 
-Este repositorio contiene prácticas completas de HTML5, CSS3, JavaScript, MySQL, PostgreSQL, Python, Tkinter, Flask y Django organizadas por nivel.
+Este repositorio contiene prácticas completas de HTML5, CSS3, JavaScript, MySQL, PostgreSQL, Python, Tkinter, Flask, Django, testing, Git y Docker organizadas por nivel.
 
 Todos los ejercicios incluyen código terminado, sin comentarios ni espacios pendientes.
 
@@ -16,6 +16,7 @@ Todos los ejercicios incluyen código terminado, sin comentarios ni espacios pen
 - [Nivel 9 — Python II: Tkinter](practicas-html/nivel-09-python-ii-tkinter/README.md): 31 clases completas.
 - [Nivel 10 — Python III: Flask](practicas-html/nivel-10-python-iii-flask/README.md): 30 clases completas.
 - [Nivel 11 — Python IV: Django](practicas-html/nivel-11-python-iv-django/README.md): 31 clases completas.
+- [Nivel 12 — Testing, buenas prácticas y despliegue](practicas-html/nivel-12-testing-buenas-practicas-despliegue/README.md): 30 clases completas.
 
 ## Prácticas del Nivel 2
 

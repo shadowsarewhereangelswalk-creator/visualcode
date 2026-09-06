@@ -60,4 +60,10 @@ El Nivel 11 contiene 31 clases completas de proyectos, aplicaciones, modelos, mi
 
 [Abrir las 31 clases del Nivel 11](nivel-11-python-iv-django/README.md)
 
+## Nivel 12 — Testing, buenas prácticas y despliegue
+
+El Nivel 12 contiene 30 clases completas de unittest, pytest, fixtures, mocks, Ruff, Black, cobertura, entornos virtuales, dependencias, Git, GitHub Actions, Docker y despliegue Flask en la nube.
+
+[Abrir las 30 clases del Nivel 12](nivel-12-testing-buenas-practicas-despliegue/README.md)
+
 Cada carpeta contiene código terminado que puede abrirse directamente en Visual Studio Code.

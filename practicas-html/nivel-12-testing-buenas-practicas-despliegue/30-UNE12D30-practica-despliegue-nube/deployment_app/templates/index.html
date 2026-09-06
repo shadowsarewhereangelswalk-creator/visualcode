@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panel de estado de una aplicación Flask desplegada">
+  <title>{{ status.name }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <header>
+      <span>UNE12D30</span>
+      <h1>{{ status.name }}</h1>
+      <p>Aplicación Flask lista para ejecución local, Docker y nube.</p>
+    </header>
+    <section>
+      <article>
+        <strong>Estado</strong>
+        <b>Operativo</b>
+      </article>
+      <article>
+        <strong>Entorno</strong>
+        <b>{{ status.environment }}</b>
+      </article>
+      <article>
+        <strong>Versión</strong>
+        <b>{{ status.version }}</b>
+      </article>
+      <article>
+        <strong>Release</strong>
+        <b>{{ status.release }}</b>
+      </article>
+    </section>
+    <nav>
+      <a href="/health">Health</a>
+      <a href="/ready">Ready</a>
+      <a href="/api/status">API status</a>
+    </nav>
+  </main>
+</body>
+</html>
+

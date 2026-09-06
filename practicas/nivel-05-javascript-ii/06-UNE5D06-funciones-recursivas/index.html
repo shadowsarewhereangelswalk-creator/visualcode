@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de funciones recursivas">
+  <title>UNE5D06 | Fundamentos de funciones recursivas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 6 · UNE5D06</p>
+      <h1>Fundamentos de funciones recursivas</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Funciones recursivas</h2>
+  <p>Una función recursiva se llama a sí misma hasta alcanzar un caso base que detiene el proceso.</p>
+  <form id="recursion-form" class="inline-form">
+    <div class="field"><label for="recursive-number">Número entre 0 y 12</label><input id="recursive-number" type="number" min="0" max="12" value="5" required></div>
+    <button type="submit">Ejecutar recursión</button>
+  </form>
+  <div class="recursion-grid">
+    <article class="output"><h3>Cuenta regresiva</h3><div id="countdown" class="countdown"></div></article>
+    <article class="factorial-card"><p>Factorial</p><strong id="factorial-result">120</strong><code id="factorial-expression">5 × 4 × 3 × 2 × 1</code></article>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

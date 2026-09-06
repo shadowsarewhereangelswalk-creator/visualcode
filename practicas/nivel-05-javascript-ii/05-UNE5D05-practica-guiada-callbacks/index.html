@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio guiado de funciones anónimas y callbacks">
+  <title>UNE5D05 | Ejercicio guiado de funciones anónimas y callbacks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 5 · Clase 5 · UNE5D05</p>
+      <h1>Ejercicio guiado de funciones anónimas y callbacks</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Práctica guiada</p>
+  <h2>Transformador de texto con callbacks</h2>
+  <form id="text-form">
+    <div class="field"><label for="source-text">Texto</label><textarea id="source-text" rows="4">Aprender JavaScript abre nuevas posibilidades.</textarea></div>
+    <div class="controls">
+      <button type="button" data-transform="uppercase">Mayúsculas</button>
+      <button type="button" data-transform="reverse">Invertir</button>
+      <button type="button" data-transform="words">Contar palabras</button>
+      <button type="button" data-transform="slug">Crear slug</button>
+    </div>
+  </form>
+  <article class="transformation">
+    <p class="eyebrow">Resultado del callback</p>
+    <strong id="transformation-name">Texto original</strong>
+    <p id="transformation-result"></p>
+  </article>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel II</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de ciclo for">
+  <title>UNE4D18 | Fundamentos de ciclo for</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 18 · UNE4D18</p>
+      <h1>Fundamentos de ciclo for</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Ciclo for</h2>
+  <p>Genera una tabla de multiplicar indicando inicio, condición y actualización en cada repetición.</p>
+  <form id="table-form" class="inline-form">
+    <div class="field"><label for="base-number">Número base</label><input id="base-number" type="number" value="7" required></div>
+    <div class="field"><label for="limit">Límite</label><input id="limit" type="number" min="1" max="20" value="10" required></div>
+    <button type="submit">Generar tabla</button>
+  </form>
+  <div class="loop-layout">
+    <ol id="multiplication-table" class="number-list"></ol>
+    <aside class="output">
+      <h3>Resumen del ciclo</h3>
+      <p>Iteraciones: <strong id="iteration-count">10</strong></p>
+      <p>Último resultado: <strong id="last-result">70</strong></p>
+      <code>for (let i = 1; i &lt;= límite; i += 1)</code>
+    </aside>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práctica P3: programa iterativo de manipulación de arreglos">
+  <title>UNE4D20 | Práctica P3: programa iterativo de manipulación de arreglos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 20 · UNE4D20</p>
+      <h1>Práctica P3: programa iterativo de manipulación de arreglos</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Práctica P3</p>
+  <h2>Gestor iterativo de tecnologías</h2>
+  <form id="technology-form" class="inline-form">
+    <div class="field"><label for="technology">Nueva tecnología</label><input id="technology" placeholder="Ejemplo: TypeScript" required></div>
+    <button type="submit">Agregar</button>
+  </form>
+  <div class="controls">
+    <button id="remove-last" class="secondary" type="button">Quitar última</button>
+    <button id="sort-list" class="secondary" type="button">Ordenar A–Z</button>
+    <button id="reverse-list" class="secondary" type="button">Invertir orden</button>
+  </div>
+  <div class="field search-field"><label for="search">Buscar en el arreglo</label><input id="search" type="search" placeholder="Escribe para filtrar"></div>
+  <div class="array-layout">
+    <ol id="technology-list" class="technology-list"></ol>
+    <aside class="output">
+      <h3>Estado del arreglo</h3>
+      <p>Elementos: <strong id="technology-count"></strong></p>
+      <code id="array-preview"></code>
+      <p id="array-message" aria-live="polite"></p>
+    </aside>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fundamentos de métodos push, pop y splice">
+  <title>UNE4D26 | Fundamentos de métodos push, pop y splice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="class-code">Nivel 4 · Clase 26 · UNE4D26</p>
+      <h1>Fundamentos de métodos push, pop y splice</h1>
+    </div>
+  </header>
+  <main class="container">
+<section class="panel">
+  <p class="eyebrow">Fundamentos</p>
+  <h2>Métodos push, pop y splice</h2>
+  <div class="array-toolbox">
+    <form id="array-form">
+      <div class="field"><label for="new-item">Nuevo elemento</label><input id="new-item" value="DOM" required></div>
+      <button type="submit">push: agregar al final</button>
+    </form>
+    <div class="controls">
+      <button id="pop-item" class="secondary" type="button">pop: quitar último</button>
+      <button id="splice-item" class="secondary" type="button">splice: quitar índice</button>
+      <div class="field small-field"><label for="remove-index">Índice</label><input id="remove-index" type="number" min="0" value="1"></div>
+    </div>
+  </div>
+  <div id="method-message" class="output" aria-live="polite"></div>
+  <div id="array-list" class="array-list"></div>
+  <code id="array-state"></code>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI Career · JavaScript Nivel I</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

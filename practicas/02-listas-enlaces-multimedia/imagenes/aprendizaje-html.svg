@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Aprendizaje de HTML</title>
+  <desc id="descripcion">Una ventana de navegador con etiquetas HTML y una marca de verificación</desc>
+  <rect width="800" height="450" rx="28" fill="#eaf2ff"/>
+  <rect x="90" y="70" width="620" height="310" rx="18" fill="#ffffff" stroke="#173b67" stroke-width="8"/>
+  <rect x="90" y="70" width="620" height="58" rx="18" fill="#173b67"/>
+  <circle cx="130" cy="99" r="10" fill="#ff6b6b"/>
+  <circle cx="165" cy="99" r="10" fill="#ffd166"/>
+  <circle cx="200" cy="99" r="10" fill="#61d095"/>
+  <text x="150" y="215" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#173b67">&lt;HTML&gt;</text>
+  <path d="M470 245l45 45 105-115" fill="none" stroke="#1f9d65" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="292" font-family="Arial, sans-serif" font-size="24" fill="#41617f">Aprender practicando</text>
+</svg>

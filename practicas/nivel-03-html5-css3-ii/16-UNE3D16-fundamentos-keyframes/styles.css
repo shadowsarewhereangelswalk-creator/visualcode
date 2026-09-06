@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light;
+}
+body {
+  margin: 0;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.site-header {
+  padding: 2.5rem 0;
+  background: #0f2f57;
+  color: #ffffff;
+}
+.container {
+  width: min(92%, 1100px);
+  margin: 0 auto;
+}
+.class-code,
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #93c5fd;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.eyebrow {
+  color: #2563eb;
+}
+.site-header h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  line-height: 1.08;
+}
+main.container {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+a,
+button,
+input,
+textarea {
+  font: inherit;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+}
+code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  background: #e2e8f0;
+  color: #7c2d12;
+}
+.site-footer {
+  padding: 1.25rem 0;
+  background: #020617;
+  color: #cbd5e1;
+  text-align: center;
+}
+.site-footer p {
+  margin: 0;
+}
+@media (max-width: 520px) {
+  .site-header {
+    padding: 2rem 0;
+  }
+  main.container {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.stage {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.lane {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  min-height: 90px;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(15, 47, 87, 0.08);
+}
+.lane > span {
+  font-weight: 800;
+}
+.ball {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #2563eb;
+  animation: bounce 1.1s ease-in-out infinite alternate;
+}
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 0.55rem solid #dbeafe;
+  border-top-color: #7c3aed;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.track {
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+.bar {
+  width: 25%;
+  height: 100%;
+  border-radius: inherit;
+  background: #f97316;
+  animation: progress 2s ease-in-out infinite alternate;
+}
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.properties div {
+  flex: 1 1 180px;
+  padding: 1rem;
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+}
+.properties dt {
+  font-weight: 900;
+}
+.properties dd {
+  margin: 0;
+}
+@keyframes bounce {
+  from {
+    transform: translateX(0) translateY(12px);
+  }
+  to {
+    transform: translateX(calc(100% + 120px)) translateY(-12px);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes progress {
+  from {
+    width: 15%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ball,
+  .spinner,
+  .bar {
+    animation: none;
+  }
+}

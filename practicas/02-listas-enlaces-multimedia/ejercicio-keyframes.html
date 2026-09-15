@@ -1,1 +1,34 @@
 
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio simple de Keyframes</title>
+
+  <style>
+    .caja {
+      width: 100px;
+      height: 100px;
+      background: blue;
+
+      animation: mover 2s infinite alternate;
+    }
+
+    @keyframes mover {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(300px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="caja"></div>
+
+</body>
+</html>

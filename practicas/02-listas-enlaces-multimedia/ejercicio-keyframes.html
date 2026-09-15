@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 <head>
@@ -11,10 +10,10 @@
       height: 300px;
       background: blue;
 
-      animation: mover 2s infinite alternate;
+      animation: moverHorizontal 2s infinite alternate;
     }
 
-    @keyframes mover {
+    @keyframes moverHorizontal {
       from {
         transform: translateX(0);
       }
@@ -23,15 +22,16 @@
         transform: translateX(800px);
       }
     }
+
     .caja2 {
       width: 200px;
       height: 300px;
       background: rgb(158, 222, 8);
 
-      animation: mover 4s infinite alternate;
+      animation: moverVertical 4s infinite alternate;
     }
 
-    @keyframes mover {
+    @keyframes moverVertical {
       from {
         transform: translateY(0);
       }

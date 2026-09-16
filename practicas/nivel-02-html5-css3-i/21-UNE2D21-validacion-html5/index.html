@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNE2D21 — Validación HTML5</title>
+</head>
+<body>
+  <h1>Validación nativa de formularios</h1>
+
+  <form action="" method="get">
+    <p>
+      <label for="usuario">Usuario</label>
+      <input
+        id="usuario"
+        name="usuario"
+        type="text"
+        required
+        minlength="3"
+        maxlength="12">
+    </p>
+
+    <p>
+      <label for="codigo">Código de estudiante</label>
+      <input
+        id="codigo"
+        name="codigo"
+        type="text"
+        required
+        pattern="[A-Z]{3}-[0-9]{3}"
+        title="Usa tres letras mayúsculas, un guion y tres números. Ejemplo: WEB-123">
+    </p>
+
+    <p>
+      <label for="mensaje">Mensaje</label><br>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        required
+        minlength="10"
+        maxlength="120"
+        rows="5"
+        cols="40"></textarea>
+    </p>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

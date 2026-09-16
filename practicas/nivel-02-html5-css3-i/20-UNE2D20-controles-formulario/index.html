@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNE2D20 — Controles de formulario</title>
+</head>
+<body>
+  <h1>Controles de formulario</h1>
+
+  <form>
+    <fieldset>
+      <legend>Modalidad preferida</legend>
+      <label><input type="radio" name="modalidad" value="online"> Online</label>
+      <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Temas de interés</legend>
+      <label><input type="checkbox" name="tema" value="html"> HTML</label>
+      <label><input type="checkbox" name="tema" value="css"> CSS</label>
+    </fieldset>
+
+    <p>
+      <label for="nivel">Nivel</label>
+      <select id="nivel" name="nivel">
+        <option value="basico">Básico</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="avanzado">Avanzado</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="comentario">Comentario</label><br>
+      <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea>
+    </p>
+  </form>
+</body>
+</html>

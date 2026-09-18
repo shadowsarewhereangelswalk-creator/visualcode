@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 06-02 — Recuperar localStorage</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Ejemplo 06-02 — Recuperación de localStorage</h1>
+    <section class="panel">
+      <div id="contenido" aria-live="polite"></div>
+      <div class="acciones">
+        <a class="boton" href="ejemplo-06-01-localstorage.html">Volver al almacenamiento</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const contenido = document.getElementById("contenido");
+    const nombreCurso = localStorage.getItem("nombreCurso");
+    const nivelCurso = localStorage.getItem("nivelCurso");
+
+    console.warn("nombreCurso:", nombreCurso);
+    console.warn("nivelCurso:", nivelCurso);
+
+    contenido.textContent =
+      "Contenido recuperado desde localStorage:\n" +
+      "nombreCurso: " + nombreCurso + "\n" +
+      "nivelCurso: " + nivelCurso;
+  </script>
+</body>
+</html>

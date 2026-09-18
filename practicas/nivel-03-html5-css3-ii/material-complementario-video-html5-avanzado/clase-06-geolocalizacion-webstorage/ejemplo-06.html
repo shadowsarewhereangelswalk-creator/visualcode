@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 06 — Geolocalización</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Ejemplo 06 — Geolocalización</h1>
+    <section class="panel">
+      <div class="acciones">
+        <button id="obtener" type="button" onclick="obtener()">Obtener coordenadas</button>
+        <button id="ver" type="button" onclick="ver()" disabled>Ver en un mapa</button>
+      </div>
+      <div id="coordenadas" aria-live="polite">Todavía no se han solicitado coordenadas.</div>
+    </section>
+  </main>
+
+  <script>
+    let latitud = null;
+    let longitud = null;
+    const mensaje = document.getElementById("coordenadas");
+    const botonVer = document.getElementById("ver");
+
+    function obtener() {
+      if (navigator.geolocation) {
+        mensaje.textContent = "El navegador soporta geolocalización. Solicitando ubicación…";
+        navigator.geolocation.getCurrentPosition(obtenerCoordenadas, obtenerError);
+      } else {
+        mensaje.style.color = "red";
+        mensaje.textContent = "El navegador no soporta geolocalización.";
+      }
+    }
+
+    function obtenerCoordenadas(posicion) {
+      latitud = posicion.coords.latitude;
+      longitud = posicion.coords.longitude;
+
+      console.warn("Latitud:", latitud);
+      console.warn("Longitud:", longitud);
+
+      mensaje.style.color = "green";
+      mensaje.textContent = "Latitud: " + latitud + "\nLongitud: " + longitud;
+      botonVer.disabled = false;
+    }
+
+    function obtenerError(error) {
+      let mensajeError;
+
+      switch (error.code) {
+        case 1:
+          mensajeError = "El acceso a la ubicación geográfica fue negado por el usuario.";
+          break;
+        case 2:
+          mensajeError = "La ubicación geográfica no está disponible.";
+          break;
+        case 3:
+          mensajeError = "Se excedió el tiempo de espera para obtener la ubicación geográfica.";
+          break;
+        default:
+          mensajeError = "Se produjo una falla al intentar obtener la ubicación geográfica.";
+      }
+
+      mensaje.style.color = "red";
+      mensaje.textContent = mensajeError;
+      botonVer.disabled = true;
+    }
+
+    function ver() {
+      if (latitud === null || longitud === null) {
+        return;
+      }
+
+      const url =
+        "https://www.openstreetmap.org/?mlat=" + latitud +
+        "&mlon=" + longitud +
+        "#map=15/" + latitud + "/" + longitud;
+
+      window.open(url, "_blank", "noopener");
+    }
+  </script>
+</body>
+</html>

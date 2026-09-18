@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 04 — Audio, video, source y track</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Ejemplo 04 — Audio, video, source y track</h1>
+  </header>
+
+  <nav aria-label="Documentación de etiquetas multimedia">
+    <ul>
+      <li><a href="ejemplo-04.html">Inicio</a></li>
+      <li><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/audio" target="_blank" rel="noreferrer">Audio</a></li>
+      <li><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/video" target="_blank" rel="noreferrer">Video</a></li>
+      <li><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/source" target="_blank" rel="noreferrer">Source</a></li>
+      <li><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/track" target="_blank" rel="noreferrer">Track</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenido">
+    <section>
+      <h2>Video</h2>
+      <video controls crossorigin="anonymous">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+        <track src="track/ejemplo-04.vtt" kind="subtitles" srclang="es" label="Español" default>
+        <track src="track/ejemplo-04-ingles.vtt" kind="subtitles" srclang="en" label="English">
+        Tu navegador no puede reproducir este video.
+      </video>
+    </section>
+
+    <aside>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.ogg" type="audio/ogg">
+        Tu navegador no puede reproducir este audio.
+      </audio>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Curso de HTML5 Nivel 2 · UNEWEB · &copy; 2024</p>
+  </footer>
+</body>
+</html>

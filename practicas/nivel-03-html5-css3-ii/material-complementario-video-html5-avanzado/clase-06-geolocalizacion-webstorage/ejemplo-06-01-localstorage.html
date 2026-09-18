@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 06-01 — localStorage</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Ejemplo 06-01 — Web Storage: localStorage</h1>
+    <section class="panel">
+      <div id="contenido" aria-live="polite"></div>
+      <div class="acciones">
+        <button id="guardar" type="button">Guardar datos</button>
+        <button id="eliminar" type="button">Eliminar datos</button>
+        <a class="boton" href="ejemplo-06-02-recuperar-localstorage.html">Abrir recuperación</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const contenido = document.getElementById("contenido");
+
+    function mostrar() {
+      const nombreCurso = localStorage.getItem("nombreCurso");
+      const nivelCurso = localStorage.getItem("nivelCurso");
+
+      console.warn("nombreCurso:", nombreCurso);
+      console.warn("nivelCurso:", nivelCurso);
+
+      contenido.textContent =
+        "Contenido almacenado:\n" +
+        "nombreCurso: " + nombreCurso + "\n" +
+        "nivelCurso: " + nivelCurso;
+    }
+
+    function guardar() {
+      localStorage.setItem("nombreCurso", "Curso de HTML5");
+      localStorage.setItem("nivelCurso", "2");
+      mostrar();
+    }
+
+    function eliminar() {
+      localStorage.removeItem("nombreCurso");
+      localStorage.removeItem("nivelCurso");
+
+      console.error("nombreCurso:", localStorage.getItem("nombreCurso"));
+      console.error("nivelCurso:", localStorage.getItem("nivelCurso"));
+
+      mostrar();
+    }
+
+    if (typeof Storage !== "undefined") {
+      guardar();
+      document.getElementById("guardar").addEventListener("click", guardar);
+      document.getElementById("eliminar").addEventListener("click", eliminar);
+    } else {
+      contenido.textContent = "El navegador no soporta almacenamiento local mediante Web Storage.";
+    }
+  </script>
+</body>
+</html>

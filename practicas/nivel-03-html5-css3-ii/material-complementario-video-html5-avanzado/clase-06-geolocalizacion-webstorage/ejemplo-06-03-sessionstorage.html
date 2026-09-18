@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 06-03 — sessionStorage</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Ejemplo 06-03 — Web Storage: sessionStorage</h1>
+    <section class="panel">
+      <div id="contenido" aria-live="polite"></div>
+      <p>Para reproducir la prueba de la clase, abre <strong>ejemplo-06-04-recuperar-sessionstorage.html</strong> manualmente en una pestaña independiente.</p>
+    </section>
+  </main>
+
+  <script>
+    sessionStorage.setItem("nombreCurso", "Curso de HTML5");
+    sessionStorage.setItem("nivelCurso", "2");
+
+    const nombreCurso = sessionStorage.getItem("nombreCurso");
+    const nivelCurso = sessionStorage.getItem("nivelCurso");
+    const contenido = document.getElementById("contenido");
+
+    console.warn("nombreCurso:", nombreCurso);
+    console.warn("nivelCurso:", nivelCurso);
+
+    contenido.textContent =
+      "Contenido de las variables de sesión:\n" +
+      "nombreCurso: " + nombreCurso + "\n" +
+      "nivelCurso: " + nivelCurso;
+  </script>
+</body>
+</html>

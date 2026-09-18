@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario avanzado HTML5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site"><div class="container"><h1>Formulario avanzado HTML5</h1><p>Tipos de entrada, validación nativa y selección de datos.</p></div></header>
+  <main class="container">
+    <form class="card" action="#" method="post">
+      <div class="grid">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" minlength="2" required placeholder="Escribe tu nombre">
+        </div>
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" required placeholder="nombre@ejemplo.com">
+        </div>
+        <div>
+          <label for="edad">Edad</label>
+          <input id="edad" name="edad" type="number" min="0" max="120" required placeholder="0–120">
+        </div>
+        <div>
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input id="nacimiento" name="fecha_nacimiento" type="date" required>
+        </div>
+        <div>
+          <label for="color">Color preferido</label>
+          <input id="color" name="color" type="color" value="#175cd3">
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Sexo</legend>
+        <div class="inline">
+          <label><input type="radio" name="sexo" value="F" checked> Femenino</label>
+          <label><input type="radio" name="sexo" value="M"> Masculino</label>
+          <label><input type="radio" name="sexo" value="O"> Otro / prefiero no indicar</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Actividad</legend>
+        <div class="inline">
+          <label><input type="checkbox" name="actividad[]" value="estudia"> Estudia</label>
+          <label><input type="checkbox" name="actividad[]" value="trabaja"> Trabaja</label>
+          <label><input type="checkbox" name="actividad[]" value="otra"> Otra</label>
+        </div>
+      </fieldset>
+
+      <label for="instruccion">Nivel de instrucción</label>
+      <select id="instruccion" name="instruccion">
+        <option value="primaria">Primaria</option>
+        <option value="secundaria" selected>Secundaria</option>
+        <option value="superior">Superior</option>
+      </select>
+
+      <p><small class="help">HTML5 valida automáticamente required, email, min, max, minlength y otros atributos antes de enviar.</small></p>
+      <button type="submit">Guardar</button>
+    </form>
+  </main>
+  <footer class="site"><div class="container">Material complementario · HTML5 avanzado</div></footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejemplo completo de elementos semánticos HTML5">
+  <title>Elementos semánticos HTML5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container">
+      <h1>Ejemplo de elementos semánticos</h1>
+      <p>Header, nav, section, article, aside, figure, figcaption y footer.</p>
+    </div>
+  </header>
+
+  <nav class="container" aria-label="Navegación principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#articulos">Artículos</a></li>
+      <li><a href="#notas">Notas</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="container layout">
+    <section id="articulos" aria-labelledby="titulo-articulos">
+      <h2 id="titulo-articulos">Artículos</h2>
+
+      <article>
+        <header>
+          <h3>Primer artículo</h3>
+          <p>Una etiqueta article representa contenido independiente y reutilizable.</p>
+        </header>
+        <p>Las etiquetas semánticas describen la función del contenido y facilitan la comprensión de la estructura por navegadores, buscadores y tecnologías de asistencia.</p>
+        <figure>
+          <svg viewBox="0 0 800 320" role="img" aria-labelledby="fig1-title fig1-desc">
+            <title id="fig1-title">Estructura semántica de una página</title>
+            <desc id="fig1-desc">Bloques que representan header, nav, main, article, aside y footer.</desc>
+            <rect width="800" height="320" rx="20" fill="#e8f3ff"/>
+            <rect x="50" y="35" width="700" height="45" rx="8" fill="#175cd3"/>
+            <rect x="50" y="95" width="700" height="35" rx="8" fill="#6aa9e9"/>
+            <rect x="50" y="145" width="470" height="120" rx="8" fill="#ffffff"/>
+            <rect x="535" y="145" width="215" height="120" rx="8" fill="#cde5ff"/>
+            <rect x="50" y="280" width="700" height="25" rx="8" fill="#102a43"/>
+          </svg>
+          <figcaption>Una figura puede acompañarse de una descripción mediante figcaption.</figcaption>
+        </figure>
+        <footer><p>Pie del primer artículo.</p></footer>
+      </article>
+
+      <article>
+        <header><h3>Segundo artículo</h3></header>
+        <p>Un artículo también puede tener su propio encabezado y su propio pie, sin depender del encabezado o pie global de la página.</p>
+        <figure>
+          <svg viewBox="0 0 800 260" role="img" aria-labelledby="fig2-title">
+            <title id="fig2-title">Árbol simplificado del DOM</title>
+            <rect width="800" height="260" rx="20" fill="#f4f7fb"/>
+            <text x="350" y="45" font-family="Arial" font-size="24" fill="#102a43">html</text>
+            <text x="190" y="110" font-family="Arial" font-size="22" fill="#175cd3">head</text>
+            <text x="545" y="110" font-family="Arial" font-size="22" fill="#175cd3">body</text>
+            <text x="440" y="190" font-family="Arial" font-size="20" fill="#52667a">header · main · footer</text>
+            <path d="M390 55 L220 90 M410 55 L565 90 M565 120 L565 165" stroke="#6b8299" stroke-width="4"/>
+          </svg>
+          <figcaption>El DOM representa el documento como un árbol de objetos y relaciones.</figcaption>
+        </figure>
+        <footer><p>Pie del segundo artículo.</p></footer>
+      </article>
+    </section>
+
+    <aside id="notas">
+      <h2>Contenido complementario</h2>
+      <blockquote>El contenido de aside complementa la información principal sin formar parte de su flujo central.</blockquote>
+      <blockquote>blockquote es útil para representar citas extensas.</blockquote>
+    </aside>
+  </main>
+
+  <footer class="site"><div class="container">Curso HTML5 · ejemplo semántico</div></footer>
+</body>
+</html>

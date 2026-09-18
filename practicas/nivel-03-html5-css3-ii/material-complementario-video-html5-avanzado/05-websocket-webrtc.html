@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebSocket y WebRTC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site"><div class="container"><h1>WebSocket y WebRTC</h1><p>Ejemplos mínimos de comunicación en tiempo real.</p></div></header>
+  <main class="container">
+    <section class="card">
+      <h2>WebSocket</h2>
+      <label for="ws-url">Servidor WebSocket</label>
+      <input id="ws-url" type="url" value="wss://echo.websocket.events" aria-describedby="ws-help">
+      <small id="ws-help" class="help">Puedes sustituir la dirección por la de tu propio servidor WebSocket.</small>
+      <label for="ws-message">Mensaje</label>
+      <input id="ws-message" type="text" value="Hola desde HTML5">
+      <div class="controls">
+        <button id="ws-connect" type="button">Conectar</button>
+        <button id="ws-send" type="button">Enviar</button>
+        <button id="ws-close" type="button" class="secondary">Cerrar</button>
+      </div>
+      <p id="ws-status" class="status" aria-live="polite">Desconectado.</p>
+    </section>
+
+    <section class="card">
+      <h2>WebRTC en bucle local</h2>
+      <p>La página crea dos RTCPeerConnection y envía la cámara de uno al otro dentro del mismo navegador para demostrar la negociación de oferta y respuesta.</p>
+      <div class="video-grid">
+        <div><h3>Cámara local</h3><video id="local-video" autoplay muted playsinline></video></div>
+        <div><h3>Recepción WebRTC</h3><video id="remote-video" autoplay playsinline></video></div>
+      </div>
+      <div class="controls">
+        <button id="camera-start" type="button">Activar cámara</button>
+        <button id="rtc-connect" type="button">Conectar WebRTC</button>
+        <button id="rtc-stop" type="button" class="secondary">Detener</button>
+      </div>
+      <p id="rtc-status" class="status" aria-live="polite">WebRTC detenido.</p>
+      <small class="help">La cámara requiere permiso y normalmente HTTPS o localhost.</small>
+    </section>
+  </main>
+  <footer class="site"><div class="container">HTML5 comunicación en tiempo real</div></footer>
+  <script src="comunicacion.js"></script>
+</body>
+</html>

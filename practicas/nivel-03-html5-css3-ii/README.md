@@ -35,4 +35,10 @@ Este nivel contiene 30 clases con ejemplos completos y funcionales. Cada clase e
 | 29 | UNE3D29 | [Ejercicio guiado de variables CSS3 y reutilización de estilos](29-UNE3D29-practica-guiada-variables-css/README.md) | HTML y CSS |
 | 30 | UNE3D30 | [Práctica P5: proyecto de sitio web responsive completo](30-UNE3D30-practica-sitio-responsive-completo/README.md) | HTML y CSS |
 
-Las clases de Canvas incluyen JavaScript. Los demás ejemplos funcionan con HTML5 y CSS3.
+Las clases de Canvas incluyen JavaScript. Los demás ejemplos oficiales funcionan con HTML5 y CSS3.
+
+## Material complementario de la clase en video
+
+La transcripción de HTML5 avanzado incluye algunos temas que no forman parte de las 30 carpetas oficiales de este nivel o que estaban cubiertos en otros niveles. Para conservar los IDs oficiales y, al mismo tiempo, tener el contenido de la clase disponible, se añadió [material complementario de HTML5 avanzado](material-complementario-video-html5-avanzado/README.md).
+
+Incluye formularios avanzados, semántica completa con figure y figcaption, controles multimedia con JavaScript, geolocalización, localStorage, sessionStorage, Drag and Drop, WebSocket y WebRTC.

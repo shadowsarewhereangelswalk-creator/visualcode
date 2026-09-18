@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APIs HTML5: geolocalización, almacenamiento y Drag and Drop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site"><div class="container"><h1>APIs del navegador</h1><p>Geolocalización, Web Storage y Drag and Drop.</p></div></header>
+  <main class="container">
+    <section class="card">
+      <h2>Geolocalización</h2>
+      <button id="geo-btn" type="button">Obtener mi ubicación</button>
+      <p id="geo-status" class="status" aria-live="polite">Sin consulta realizada.</p>
+      <small class="help">La geolocalización requiere permiso del usuario y normalmente un contexto seguro (HTTPS o localhost).</small>
+    </section>
+
+    <section class="card">
+      <h2>Web Storage</h2>
+      <label for="nota">Dato de prueba</label>
+      <input id="nota" type="text" placeholder="Escribe un texto para guardar">
+      <div class="controls">
+        <button id="local-save" type="button">Guardar en localStorage</button>
+        <button id="local-load" type="button" class="secondary">Leer localStorage</button>
+        <button id="session-save" type="button">Guardar en sessionStorage</button>
+        <button id="session-load" type="button" class="secondary">Leer sessionStorage</button>
+      </div>
+      <p id="storage-status" class="status" aria-live="polite">Todavía no hay operación de almacenamiento.</p>
+    </section>
+
+    <section class="card">
+      <h2>Drag and Drop</h2>
+      <p id="drag-item" class="drag-source" draggable="true">Arrástrame</p>
+      <div id="drop-zone" class="drop-zone" tabindex="0">Suelta el elemento aquí</div>
+      <p id="drag-status" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer class="site"><div class="container">HTML5 APIs</div></footer>
+  <script src="apis.js"></script>
+</body>
+</html>

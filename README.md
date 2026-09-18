@@ -6,6 +6,12 @@ La carpeta oficial es [`practicas/`](practicas/README.md). Los ejercicios contie
 
 El código de este repositorio no modifica el estado académico del tracker. Un ejercicio ejecutado correctamente no significa que una clase haya sido marcada como completada.
 
+## 🌐 Visualización web directa
+
+**[Abrir el catálogo web de ejercicios](https://raw.githack.com/shadowsarewhereangelswalk-creator/visualcode/main/index.html)**
+
+El catálogo reúne los ejercicios estáticos de **HTML, CSS y JavaScript** que pueden ejecutarse directamente en el navegador y permite buscarlos por ID, tema o ruta. Los ejercicios que necesitan servidor, base de datos, intérprete de Python, Tkinter, Flask/Django u otra infraestructura siguen enlazados como código fuente dentro de sus niveles.
+
 ## Contenido
 
 - [Nivel 2 — HTML5 y CSS3 Nivel I](practicas/README.md): 5 prácticas oficiales.

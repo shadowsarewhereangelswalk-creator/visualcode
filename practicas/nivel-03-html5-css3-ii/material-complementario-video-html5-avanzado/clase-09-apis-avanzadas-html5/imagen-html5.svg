@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">HTML5</title>
+  <desc id="desc">Tarjeta naranja con el texto HTML5</desc>
+  <rect width="200" height="200" rx="24" fill="#f4f7fb"/>
+  <path d="M45 30h110l-10 115-45 25-45-25z" fill="#e44d26"/>
+  <path d="M100 42h43l-8 94-35 19z" fill="#f16529"/>
+  <path d="M68 60h64l-2 18H88l2 18h38l-5 42-23 13-23-13-2-24h18l1 12 8 4 8-4 2-14H75z" fill="#fff"/>
+  <text x="100" y="24" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">HTML5</text>
+</svg>

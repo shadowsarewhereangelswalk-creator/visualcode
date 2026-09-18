@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 09 — APIs avanzadas de HTML5</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Ejemplo 09 — Drag and Drop</h1>
+    <p>Arrastra la imagen entre los dos contenedores.</p>
+  </header>
+
+  <main>
+    <div
+      id="div1"
+      class="zona zona-roja"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+      aria-label="Contenedor uno">
+    </div>
+
+    <div
+      id="div2"
+      class="zona zona-azul"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+      aria-label="Contenedor dos">
+      <img
+        id="imagen"
+        src="imagen-html5.svg"
+        width="200"
+        height="200"
+        alt="Tarjeta HTML5 arrastrable"
+        draggable="true"
+        ondragstart="drag(event)">
+    </div>
+  </main>
+
+  <script src="drag-drop.js"></script>
+</body>
+</html>

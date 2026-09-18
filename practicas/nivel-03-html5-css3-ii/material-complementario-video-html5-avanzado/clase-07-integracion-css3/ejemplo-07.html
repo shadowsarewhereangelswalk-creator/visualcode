@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo 07 — Integración con CSS3</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Ejemplo 07 — Integración con CSS3</h1>
+    <p>Selectores avanzados y propiedades visuales de CSS3.</p>
+  </header>
+
+  <main>
+    <section class="panel" aria-labelledby="selectores">
+      <h2 id="selectores">Selectores por atributo</h2>
+      <div id="uno">
+        <p class="parrafo-uno">Clase: parrafo-uno</p>
+        <p class="uno-parrafo">Clase: uno-parrafo</p>
+        <p class="parra-uno-foo">Clase: parra-uno-foo</p>
+        <p class="parrafo">Clase: parrafo</p>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="posiciones">
+      <h2 id="posiciones">Selectores por posición</h2>
+      <div id="dos">
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+        <p>Cuarto párrafo</p>
+      </div>
+
+      <div id="tres">
+        <p class="tercero">Primer elemento</p>
+        <p class="tercero">Segundo elemento</p>
+        <p class="diferente">Tercer elemento con clase diferente</p>
+        <p class="tercero">Último elemento</p>
+      </div>
+    </section>
+
+    <section id="principal" aria-labelledby="principal-titulo">
+      <h2 id="principal-titulo">Hojas de estilo en cascada (CSS)</h2>
+      <p>Pasa el puntero sobre esta tarjeta para aplicar una transformación.</p>
+    </section>
+  </main>
+
+  <footer>Curso HTML5 Nivel 2 · Clase 07</footer>
+</body>
+</html>

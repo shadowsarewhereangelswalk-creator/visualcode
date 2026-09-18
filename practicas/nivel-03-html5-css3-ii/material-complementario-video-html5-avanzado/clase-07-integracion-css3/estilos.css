@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+}
+
+.encabezado,
+footer {
+  background: #102a43;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main {
+  width: min(92%, 1000px);
+  margin: 2rem auto;
+}
+
+.panel,
+#principal {
+  margin: 1.25rem 0;
+  padding: 1.25rem;
+  border: 1px solid #9fb3c8;
+  border-radius: 20px;
+  background: #fff;
+}
+
+#uno p { padding: .65rem; }
+
+p[class*="parrafo"] { color: #0b5ed7; }
+p[class^="uno"] { background: #fff3cd; }
+p[class$="uno"] { border-left: 6px solid #198754; }
+
+#dos p {
+  margin: .35rem 0;
+  padding: .65rem;
+}
+
+#dos p:nth-child(odd) { background: #d1e7dd; }
+
+#dos p:nth-child(even) {
+  background: #212529;
+  color: #ffb4a2;
+}
+
+#tres { margin-top: 1rem; }
+#tres p:first-child { color: purple; }
+#tres p:last-child { color: green; }
+#tres p:not(.tercero) { background: #cfe2ff; }
+
+#principal {
+  max-width: 500px;
+  margin-left: 50px;
+  text-align: center;
+  border-color: #000;
+  box-shadow: 5px 5px 5px #888;
+  background: linear-gradient(to bottom, #fff, #8ec5ff);
+  transition: transform .35s ease;
+}
+
+#principal h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#principal:hover {
+  transform: rotate(-2deg) skewX(-2deg);
+}
+
+@media (max-width: 620px) {
+  #principal {
+    width: 100%;
+    margin-left: 0;
+  }
+}

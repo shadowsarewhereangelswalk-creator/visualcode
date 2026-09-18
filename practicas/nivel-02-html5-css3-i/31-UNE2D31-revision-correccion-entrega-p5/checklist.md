@@ -1,0 +1,11 @@
+# Checklist P5
+- [ ] doctype y lang correctos
+- [ ] un único h1
+- [ ] jerarquía de encabezados lógica
+- [ ] imágenes con alt
+- [ ] enlaces internos válidos
+- [ ] sin estilos en línea innecesarios
+- [ ] contenido principal dentro de main
+- [ ] footer pertinente
+- [ ] sin texto de prueba
+- [ ] revisión final en navegador

@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;line-height:1.5}header,main,footer{padding:1.5rem}nav{display:flex;gap:1rem}.hero{padding:4rem 1rem;text-align:center}.rejilla{display:flex;gap:1rem;flex-wrap:wrap}.rejilla article{flex:1 1 200px;padding:1rem;border:1px solid #bbb}

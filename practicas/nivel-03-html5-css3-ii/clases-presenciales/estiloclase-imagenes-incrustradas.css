@@ -14,7 +14,7 @@ main {
 }
 
 section {
-    width: 40%;
+    width: 33%;
 }
 
 main section figure img {
@@ -36,4 +36,8 @@ main section figure figcaption {
 
 figure {
     margin: 15px 0;
+}
+
+main div {
+    flex-wrap: inherit;
 }

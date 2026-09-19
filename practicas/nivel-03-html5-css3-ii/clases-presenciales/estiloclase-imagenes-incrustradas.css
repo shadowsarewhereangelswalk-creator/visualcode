@@ -49,18 +49,19 @@ main div {
     
 }
 
-@media screen and (max-width: 770px)
-{
+@media screen and (max-width: 770px) {
+
     main div {
-        display: block;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
+
     section {
-        justify-content: center;
+        width: 100%;
     }
+
     p {
-        font-size: .1em;
+        font-size: 1em;
     }
-    
 }

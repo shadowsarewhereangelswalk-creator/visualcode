@@ -52,12 +52,12 @@ main div {
 @media screen and (max-width: 770px)
 {
     main div {
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
     }
     section {
-        justify-self: center;
+        justify-content: center;
     }
     p {
         font-size: .1em;

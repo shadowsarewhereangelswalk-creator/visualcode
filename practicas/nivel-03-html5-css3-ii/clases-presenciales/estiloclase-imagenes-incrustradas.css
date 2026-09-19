@@ -13,14 +13,23 @@ main {
     margin: 20px
 }
 
+section {
+    width: 40%;
+}
+
 main section figure img {
-    width: 35%;
+    width: 50%;
     margin: 1% 0;
     border-radius: 7px; 
 
 }
 
-main section figure {
-    display: flex;
-    justify-content: center;
+main section figure img,
+main section figure figcaption {
+    display: block;
+    justify-self: center;
+}
+
+.lorem {
+    text-align: center;
 }

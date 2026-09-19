@@ -64,4 +64,7 @@ main div {
     p {
         font-size: 1em;
     }
+    img {
+        content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUMYkZdO1RfEb-6WiHZNelQI7vdxUJaCD_AalcKv6tXQ&s");
+    }
 }

@@ -43,8 +43,8 @@ main div {
 
 @media screen and (max-width: 1000px)
 {
-    body {
-        background-color: lightgreen;
+    p {
+        font-size: .7em;
     }
     
 }

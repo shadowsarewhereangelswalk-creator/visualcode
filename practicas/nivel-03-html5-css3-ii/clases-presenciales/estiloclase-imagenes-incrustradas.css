@@ -12,3 +12,9 @@ h1 {
 main {
     margin: 20px
 }
+
+main section figure img {
+    width: 35%;
+    
+
+}

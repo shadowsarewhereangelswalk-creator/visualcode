@@ -39,5 +39,6 @@ figure {
 }
 
 main div {
-    flex-wrap: inherit;
+    display: flex;
+    flex-direction: row;
 }

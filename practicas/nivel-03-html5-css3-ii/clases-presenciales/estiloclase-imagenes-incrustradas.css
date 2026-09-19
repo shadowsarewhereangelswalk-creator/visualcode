@@ -19,3 +19,8 @@ main section figure img {
     border-radius: 7px; 
 
 }
+
+main section figure {
+    display: flex;
+    justify-content: center;
+}

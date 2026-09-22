@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form action="" method="get">
+    <form action="" oninput="rango_salida.value = rango_entrada.value">
         <table>
             <tbody>
                 <tr>
@@ -42,6 +42,22 @@
                     <tr>
                         <td>FECHA DE NACIMIENTO:</td>
                         <td><input type="date" name="fecha_nacimiento" id="fecha_nacimiento"></td>
+                    </tr>
+                    <tr>
+                        <td>FECHA Y HORA:</td>
+                        <td><input type="datetime-local" name="fecha_hora" id="fecha_hora"></td>
+                    </tr>
+                    <tr>
+                        <td>HORA:</td>
+                        <td><input type="time" name="hora" id="hora"></td>
+                    </tr>
+                    <tr>
+                        <td>RANGO:</td>
+                        <td>
+                            <input type="range" min="0" max="100" name="rango_entrada" value="0">
+                            <output name="rango_salida">0</output>
+                            </input>
+                        </td>
                     </tr>
                 <tr>
                     <td><input type="submit" value="GUARDAR"></td>

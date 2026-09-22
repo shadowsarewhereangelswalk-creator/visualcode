@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form action="" oninput="rango_salida.value = rango_entrada.value">
+    <form action="" oninput="rango_salida.value = rango_entrada.value;
+    document.getElementById('progress').value=rango_entrada.value;">
         <table>
             <tbody>
                 <tr>
@@ -57,6 +58,18 @@
                             <input type="range" min="0" max="100" name="rango_entrada" value="0">
                             <output name="rango_salida">0</output>
                             </input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>METER:</td>
+                        <td>
+                            <meter value=""></meter>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PROGRESS:</td>
+                        <td>
+                            <progress min="0" max="100" value="0" id="progress"></progress>
                         </td>
                     </tr>
                 <tr>

@@ -25,10 +25,20 @@
                 </tr>
                     <td>ACTIVIDAD:</td>
                     <td>
-                        <input type="checkbox" name="actividad" id="actividad" value="ESTUDIA">ESTUDIA
-                        <input type="checkbox" name="actividad" id="actividad" value="TRABAJA">TRABAJA
-                        <input type="checkbox" name="actividad" id="actividad" value="OTRA">OTRA
+                        <input type="checkbox" name="actividad" id="actividad" value="ESTUDIA" multiple>ESTUDIA
+                        <input type="checkbox" name="actividad" id="actividad" value="TRABAJA" multiple>TRABAJA
+                        <input type="checkbox" name="actividad" id="actividad" value="OTRA" multiple>OTRA
                     </td>
+                    <tr>
+                        <td>NIVEL DE INSTRUCCIÓN:</td>
+                        <td>
+                            <select name="instruccion" id="instruccion">
+                                <option value="PRIMARIA">PRIMARIA</option>
+                                <option value="SECUNDARIA">SECUNDARIA</option>
+                                <option value="SUPERIOR">SUPERIOR</option>
+                            </select>
+                        </td>
+                    </tr>
                 <tr>
                     <td><input type="submit" value="GUARDAR"></td>
                 </tr>

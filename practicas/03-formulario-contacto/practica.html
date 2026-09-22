@@ -1,86 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios</title>
 </head>
+
 <body>
+
     <h1>Formularios</h1>
-    <form action="" oninput="rango_salida.value = rango_entrada.value;
-    document.getElementById('progress').value=rango_entrada.value;
-    document.getElementById('meter').value=rango_entrada.value;">
+
+    <form action=""
+        oninput="
+            rango_salida.value = rango_entrada.value;
+            document.getElementById('progress').value = rango_entrada.value;
+            document.getElementById('meter').value = rango_entrada.value;
+        ">
+
         <table>
             <tbody>
+
                 <tr>
-                    <td>nombre</td>
-                    <td><input type="text" name="nombre" id="nombre"></td>
-                </tr>
-                <tr>
-                    <td>edad</td>
-                    <td><input type="number" name="edad" id="edad" min="0" max="120"></td>
-                </tr>
-                <tr>
-                    <td>Sexo</td>
-                    <td><input type="radio" name="sexo" id="sexo" value="F" checked>FEMENINO</td>
-                    <td><input type="radio" name="sexo" id="sexo" value="M">MASCULINO</td>
-                </tr>
-                    <td>ACTIVIDAD:</td>
+                    <td>Nombre:</td>
                     <td>
-                        <input type="checkbox" name="actividad" id="actividad" value="ESTUDIA" multiple>ESTUDIA
-                        <input type="checkbox" name="actividad" id="actividad" value="TRABAJA" multiple>TRABAJA
-                        <input type="checkbox" name="actividad" id="actividad" value="OTRA" multiple>OTRA
+                        <input type="text" name="nombre" id="nombre">
                     </td>
-                    <tr>
-                        <td>NIVEL DE INSTRUCCIÓN:</td>
-                        <td>
-                            <select name="instruccion" id="instruccion">
-                                <option value="PRIMARIA">PRIMARIA</option>
-                                <option value="SECUNDARIA">SECUNDARIA</option>
-                                <option value="SUPERIOR">SUPERIOR</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>FECHA DE NACIMIENTO:</td>
-                        <td><input type="date" name="fecha_nacimiento" id="fecha_nacimiento"></td>
-                    </tr>
-                    <tr>
-                        <td>FECHA Y HORA:</td>
-                        <td><input type="datetime-local" name="fecha_hora" id="fecha_hora"></td>
-                    </tr>
-                    <tr>
-                        <td>HORA:</td>
-                        <td><input type="time" name="hora" id="hora"></td>
-                    </tr>
-                    <tr>
-                        <td>RANGO:</td>
-                        <td>
-                            <input type="range" min="0" max="100" name="rango_entrada" value="0">
-                            <output name="rango_salida">0</output>
-                            </input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>METER:</td>
-                        <td>
-                            <meter low="33" min="0" max="100" optimum="80" high="66" id="meter" value="0"></meter>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>PROGRESS:</td>
-                        <td>
-                            <progress min="0" max="100" value="0" id="progress"></progress>
-                        </td>
-                    </tr>
-                <tr>
-                    <td><input type="submit" value="GUARDAR"></td>
                 </tr>
+
+                <tr>
+                    <td>Edad:</td>
+                    <td>
+                        <input type="number"
+                               name="edad"
+                               id="edad"
+                               min="0"
+                               max="120">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sexo:</td>
+
+                    <td>
+                        <input type="radio"
+                               name="sexo"
+                               id="sexo_f"
+                               value="F"
+                               checked>
+                        FEMENINO
+                    </td>
+
+                    <td>
+                        <input type="radio"
+                               name="sexo"
+                               id="sexo_m"
+                               value="M">
+                        MASCULINO
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>ACTIVIDAD:</td>
+
+                    <td>
+                        <input type="checkbox"
+                               name="actividad"
+                               id="estudia"
+                               value="ESTUDIA">
+                        ESTUDIA
+
+                        <input type="checkbox"
+                               name="actividad"
+                               id="trabaja"
+                               value="TRABAJA">
+                        TRABAJA
+
+                        <input type="checkbox"
+                               name="actividad"
+                               id="otra"
+                               value="OTRA">
+                        OTRA
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>NIVEL DE INSTRUCCIÓN:</td>
+
+                    <td>
+                        <select name="instruccion" id="instruccion">
+                            <option value="PRIMARIA">PRIMARIA</option>
+                            <option value="SECUNDARIA">SECUNDARIA</option>
+                            <option value="SUPERIOR">SUPERIOR</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>FECHA DE NACIMIENTO:</td>
+
+                    <td>
+                        <input type="date"
+                               name="fecha_nacimiento"
+                               id="fecha_nacimiento">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>FECHA Y HORA:</td>
+
+                    <td>
+                        <input type="datetime-local"
+                               name="fecha_hora"
+                               id="fecha_hora">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>HORA:</td>
+
+                    <td>
+                        <input type="time"
+                               name="hora"
+                               id="hora">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>RANGO:</td>
+
+                    <td>
+                        <input type="range"
+                               min="0"
+                               max="100"
+                               name="rango_entrada"
+                               id="rango_entrada"
+                               value="0">
+
+                        <output name="rango_salida">0</output>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>METER:</td>
+
+                    <td>
+                        <meter
+                            low="33"
+                            min="0"
+                            max="100"
+                            optimum="80"
+                            high="66"
+                            id="meter"
+                            value="0">
+                        </meter>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PROGRESS:</td>
+
+                    <td>
+                        <progress
+                            max="100"
+                            value="0"
+                            id="progress">
+                        </progress>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="GUARDAR">
+                    </td>
+                </tr>
+
             </tbody>
         </table>
-        
 
-        
     </form>
+
 </body>
 </html>

@@ -73,22 +73,39 @@ a {
 
 
 .header {
-    background: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 3px 20px rgba(0,0,0,.08);
+
+    width:100%;
+
+    background:#ffffff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 20px rgba(0,0,0,.08);
+
 }
+
 
 .nav-container {
-    height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    width:92%;
+
+    max-width:1250px;
+
+    height:85px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
 }
-
-
-
 
 
 /* LOGO */

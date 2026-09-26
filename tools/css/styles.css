@@ -73,32 +73,18 @@ a {
 
 
 .header {
-
     background: #ffffff;
-
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
-
-    box-shadow:
-    0 3px 20px rgba(0,0,0,.08);
-
+    box-shadow: 0 3px 20px rgba(0,0,0,.08);
 }
 
-
-
 .nav-container {
-
     height: 85px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
 }
 
 

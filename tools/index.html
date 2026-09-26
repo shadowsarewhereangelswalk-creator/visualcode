@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mente & Ciencia | Trastornos de Personalidad</title>
@@ -18,10 +19,10 @@
 
 <header class="header">
 
-<div class="container">
+<div class="container nav-container">
 
 
-<a class="logo" href="index.html">
+<a class="brand" href="index.html">
 
 <img src="images/logo.png" alt="Mente y Ciencia">
 
@@ -33,7 +34,17 @@ Mente & Ciencia
 
 
 
-<nav>
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-icon">
+☰
+</label>
+
+
+
+
+<nav class="navigation">
 
 
 <a href="index.html">
@@ -41,9 +52,10 @@ Inicio
 </a>
 
 
-<a href="#">
+<a href="cie11.html">
 CIE-11
 </a>
+
 
 
 
@@ -55,51 +67,122 @@ Trastornos de Personalidad ▾
 </a>
 
 
-<div class="dropdown-content">
 
-<a href="#">
+<div class="dropdown-menu">
+
+
+<a href="trastornos/paranoide.html">
 Paranoide
 </a>
 
-<a href="#">
+
+<a href="trastornos/esquizoide.html">
 Esquizoide
 </a>
 
-<a href="#">
+
+<a href="trastornos/esquizotipico.html">
 Esquizotípico
 </a>
 
-<a href="#">
+
+<a href="trastornos/antisocial.html">
 Antisocial
 </a>
 
-<a href="#">
+
+<a href="trastornos/limite.html">
 Límite
 </a>
 
-<a href="#">
+
+<a href="trastornos/histrionico.html">
 Histriónico
 </a>
 
-<a href="#">
+
+<a href="trastornos/narcisista.html">
 Narcisista
 </a>
 
-<a href="#">
+
+<a href="trastornos/evitativo.html">
 Evitativo
 </a>
 
-<a href="#">
+
+<a href="trastornos/dependiente.html">
 Dependiente
 </a>
 
-<a href="#">
+
+<a href="trastornos/obsesivo.html">
 Obsesivo-compulsivo
 </a>
 
 
 </div>
 
+</div>
+
+
+
+
+
+<div class="dropdown">
+
+
+<a href="#">
+Modelo CIE-11 ▾
+</a>
+
+
+
+<div class="dropdown-menu">
+
+
+<a href="gravedad.html">
+Gravedad
+</a>
+
+
+<a href="rasgos.html">
+Rasgos
+</a>
+
+
+<a href="afectividad.html">
+Afectividad negativa
+</a>
+
+
+<a href="desapego.html">
+Desapego
+</a>
+
+
+<a href="disocialidad.html">
+Disocialidad
+</a>
+
+
+<a href="desinhibicion.html">
+Desinhibición
+</a>
+
+
+<a href="anancastia.html">
+Anancastia
+</a>
+
+
+<a href="patron-limite.html">
+Patrón límite
+</a>
+
+
+</div>
+
 
 </div>
 
@@ -107,25 +190,22 @@ Obsesivo-compulsivo
 
 
 
-<a href="#">
-Modelo CIE-11
-</a>
-
-
-<a href="#">
+<a href="libros.html">
 Libros
 </a>
 
 
-<a href="#">
+<a href="contacto.html">
 Contacto
 </a>
+
 
 
 </nav>
 
 
 </div>
+
 
 </header>
 
@@ -141,7 +221,6 @@ Contacto
 <div class="container hero-container">
 
 
-
 <div class="hero-text">
 
 
@@ -151,17 +230,13 @@ Comprender la personalidad
 
 
 <p>
-
 Información educativa sobre los trastornos de personalidad,
 la clasificación CIE-11 y los principales modelos clínicos.
-
 </p>
 
 
-<a href="#" class="button">
-
+<a href="cie11.html" class="button">
 Explorar CIE-11
-
 </a>
 
 
@@ -170,9 +245,7 @@ Explorar CIE-11
 
 
 
-
 <div class="hero-image">
-
 
 <img src="images/hero.jpg" alt="Psicología">
 
@@ -195,50 +268,41 @@ Explorar CIE-11
 <section class="container">
 
 
-<div class="cards">
+<div class="info-grid">
 
 
-<div class="card">
+<div class="info-card">
 
-
-<h2>
+<div class="icon">
 🧠
-</h2>
-
+</div>
 
 <h3>
 Trastornos de personalidad
 </h3>
 
-
 <p>
 Tipos, características y funcionamiento.
 </p>
-
 
 </div>
 
 
 
 
+<div class="info-card">
 
-<div class="card">
-
-
-<h2>
+<div class="icon">
 📘
-</h2>
-
+</div>
 
 <h3>
 Modelo CIE-11
 </h3>
 
-
 <p>
 Gravedad y dominios de rasgos.
 </p>
-
 
 </div>
 
@@ -246,23 +310,19 @@ Gravedad y dominios de rasgos.
 
 
 
-<div class="card">
+<div class="info-card">
 
-
-<h2>
+<div class="icon">
 📚
-</h2>
-
+</div>
 
 <h3>
 Biblioteca
 </h3>
 
-
 <p>
 Libros y recursos educativos.
 </p>
-
 
 </div>
 
@@ -283,35 +343,35 @@ Libros y recursos educativos.
 <section class="container">
 
 
-<h2 class="title">
+<div class="section-title">
+
+<h2>
 Libros recomendados
 </h2>
 
-
-<div class="books">
-
+</div>
 
 
-<div class="book">
 
+<div class="books-grid">
+
+
+
+<div class="book-card">
 
 <img src="images/libro1.jpg">
-
 
 <h3>
 Trastornos de Personalidad
 </h3>
 
-
-<p>
+<p class="price">
 $24.99
 </p>
 
-
-<button>
+<button class="button">
 Comprar
 </button>
-
 
 </div>
 
@@ -319,26 +379,21 @@ Comprar
 
 
 
-<div class="book">
-
+<div class="book-card">
 
 <img src="images/libro2.jpg">
-
 
 <h3>
 Comprendiendo la CIE-11
 </h3>
 
-
-<p>
+<p class="price">
 $29.99
 </p>
 
-
-<button>
+<button class="button">
 Comprar
 </button>
-
 
 </div>
 
@@ -346,29 +401,23 @@ Comprar
 
 
 
-<div class="book">
-
+<div class="book-card">
 
 <img src="images/libro3.jpg">
-
 
 <h3>
 Intervención Terapéutica
 </h3>
 
-
-<p>
+<p class="price">
 $22.99
 </p>
 
-
-<button>
+<button class="button">
 Comprar
 </button>
 
-
 </div>
-
 
 
 </div>
@@ -386,43 +435,83 @@ Comprar
 <section class="container">
 
 
-<h2 class="title">
+<div class="section-title">
+
+<h2>
 Explora los trastornos
 </h2>
 
+</div>
 
 
-<div class="disorders">
 
 
-<div>
+<div class="disorder-grid">
+
+
+
+<a class="disorder-card">
+
 <img src="images/paranoide.jpg">
-<h3>Paranoide</h3>
-</div>
+
+<h3>
+Paranoide
+</h3>
+
+</a>
 
 
-<div>
+
+
+<a class="disorder-card">
+
 <img src="images/esquizoide.jpg">
-<h3>Esquizoide</h3>
-</div>
+
+<h3>
+Esquizoide
+</h3>
+
+</a>
 
 
-<div>
+
+
+<a class="disorder-card">
+
 <img src="images/antisocial.jpg">
-<h3>Antisocial</h3>
-</div>
+
+<h3>
+Antisocial
+</h3>
+
+</a>
 
 
-<div>
+
+
+<a class="disorder-card">
+
 <img src="images/limite.jpg">
-<h3>Límite</h3>
-</div>
+
+<h3>
+Límite
+</h3>
+
+</a>
 
 
-<div>
+
+
+<a class="disorder-card">
+
 <img src="images/narcisista.jpg">
-<h3>Narcisista</h3>
-</div>
+
+<h3>
+Narcisista
+</h3>
+
+</a>
+
 
 
 </div>
@@ -436,8 +525,7 @@ Explora los trastornos
 
 
 
-
-<footer>
+<footer class="footer">
 
 
 <div class="container">

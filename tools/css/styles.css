@@ -1,0 +1,24 @@
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f8fc;color:#16324a}
+.container{width:92%;max-width:1250px;margin:auto}
+header{background:white;padding:18px 0;box-shadow:0 2px 10px #ddd;position:sticky;top:0}
+.header{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:28px;font-weight:bold;color:#12395a}
+.logo span{color:#1680b8}
+nav a{margin:0 10px;color:#12395a;text-decoration:none;font-weight:bold}
+.dropdown{position:relative;display:inline-block}
+.dropcontent{display:none;position:absolute;background:white;padding:15px;width:240px;box-shadow:0 8px 20px #ccc}
+.dropcontent a{display:block;margin:8px}
+.dropdown:hover .dropcontent{display:block}
+.hero{display:flex;align-items:center;padding:60px 0;background:#eaf5fb}
+.hero img{width:50%;border-radius:20px}
+.hero div{padding:30px}
+h1{font-size:55px}
+button{background:#0870aa;color:white;border:0;padding:14px 30px;border-radius:10px}
+.features,.cards,.disorders{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px 0}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 5px 20px #ddd}
+.card img{width:100%;border-radius:10px}
+.disorders img{height:140px;object-fit:cover}
+footer{background:#062d49;color:white;padding:35px;text-align:center}
+@media(max-width:800px){.hero,.features,.cards,.disorders{display:block}.card{margin:20px}}

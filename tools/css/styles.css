@@ -1,6 +1,6 @@
-/* ==============================
-   RESET GENERAL
-================================ */
+/* =====================================
+   RESET
+===================================== */
 
 * {
     margin: 0;
@@ -16,49 +16,42 @@ html {
 
 body {
 
-    font-family:
-    "Inter",
-    Arial,
-    Helvetica,
-    sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-    background: #f4f8fc;
+    background:#f4f8fc;
 
-    color: #18324b;
+    color:#17324d;
 
-    line-height: 1.6;
+    line-height:1.6;
 
 }
-
 
 
 img {
 
-    max-width: 100%;
+    max-width:100%;
 
-    display: block;
+    display:block;
 
 }
-
 
 
 a {
 
-    text-decoration: none;
+    text-decoration:none;
 
-    color: inherit;
+    color:inherit;
 
 }
-
 
 
 .container {
 
-    width: 92%;
+    width:92%;
 
-    max-width: 1250px;
+    max-width:1250px;
 
-    margin: auto;
+    margin:auto;
 
 }
 
@@ -66,10 +59,9 @@ a {
 
 
 
-
-/* ==============================
+/* =====================================
    HEADER
-================================ */
+===================================== */
 
 
 .header {
@@ -84,20 +76,17 @@ a {
 
     z-index:1000;
 
-    box-shadow:0 3px 20px rgba(0,0,0,.08);
+    box-shadow:
+    0 3px 20px rgba(0,0,0,.08);
 
 }
 
 
+
 .nav-container {
 
-    width:92%;
-
-    max-width:1250px;
 
     height:85px;
-
-    margin:auto;
 
     display:flex;
 
@@ -108,22 +97,24 @@ a {
 }
 
 
-/* LOGO */
 
+
+
+/* LOGO */
 
 .brand {
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 12px;
+    gap:12px;
 
-    font-size: 26px;
+    color:#12395a;
 
-    font-weight: 700;
+    font-size:26px;
 
-    color: #123b5a;
+    font-weight:700;
 
 }
 
@@ -131,11 +122,11 @@ a {
 
 .brand img {
 
-    width: 55px;
+    width:55px;
 
-    height: 55px;
+    height:55px;
 
-    object-fit: contain;
+    object-fit:contain;
 
 }
 
@@ -143,16 +134,19 @@ a {
 
 
 
-/* MENU */
+
+/* =====================================
+   MENU
+===================================== */
 
 
 .navigation {
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 22px;
+    gap:22px;
 
 }
 
@@ -161,11 +155,15 @@ a {
 .navigation > a,
 .dropdown > a {
 
-    font-size: 15px;
 
-    font-weight: 600;
+    color:#17324d;
 
-    color: #17324d;
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
 
 }
 
@@ -173,7 +171,9 @@ a {
 
 .navigation a:hover {
 
-    color: #0874ad;
+
+    color:#0874ad;
+
 
 }
 
@@ -182,14 +182,14 @@ a {
 
 
 
-/* ==============================
-   DROPDOWN
-================================ */
+/* DROPDOWN */
 
 
 .dropdown {
 
-    position: relative;
+
+    position:relative;
+
 
 }
 
@@ -197,26 +197,31 @@ a {
 
 .dropdown-menu {
 
-    display: none;
 
-    position: absolute;
+    display:none;
 
-    top: 35px;
+    position:absolute;
 
-    left: 0;
+    top:35px;
 
-    width: 270px;
+    left:0;
+
+
+    width:260px;
+
 
     background:white;
 
+
     padding:15px;
+
 
     border-radius:12px;
 
 
     box-shadow:
 
-    0 10px 35px rgba(0,0,0,.15);
+    0 10px 30px rgba(0,0,0,.15);
 
 
 }
@@ -225,11 +230,18 @@ a {
 
 .dropdown-menu a {
 
+
     display:block;
 
-    padding:9px;
+
+    padding:8px;
+
+
+    color:#17324d;
+
 
     font-size:14px;
+
 
 }
 
@@ -240,6 +252,7 @@ a {
 
     background:#eaf5fb;
 
+
     border-radius:8px;
 
 
@@ -249,16 +262,22 @@ a {
 
 .dropdown:hover .dropdown-menu {
 
+
     display:block;
+
 
 }
 
 
 
 
-/* ==============================
-   MENU MOBILE CSS ONLY
-================================ */
+
+
+
+
+/* =====================================
+   MENU MOBILE
+===================================== */
 
 
 #menu-toggle {
@@ -270,11 +289,13 @@ a {
 
 .menu-icon {
 
+
     display:none;
 
-    font-size:32px;
+    font-size:30px;
 
     cursor:pointer;
+
 
 }
 
@@ -283,29 +304,35 @@ a {
 
 
 
-/* ==============================
+
+
+
+/* =====================================
    HERO
-================================ */
+===================================== */
 
 
 .hero {
+
 
     background:
 
     linear-gradient(
     120deg,
-    #e8f5fc,
+    #eaf6fc,
     #ffffff
     );
 
 
-    padding:80px 0;
+    padding:70px 0;
+
 
 }
 
 
 
-.hero-grid {
+.hero-container {
+
 
     display:grid;
 
@@ -315,7 +342,8 @@ a {
 
     align-items:center;
 
-    gap:60px;
+    gap:50px;
+
 
 }
 
@@ -325,11 +353,11 @@ a {
 .hero-text h1 {
 
 
-    font-size:60px;
+    font-size:58px;
 
     line-height:1.1;
 
-    color:#123b5a;
+    color:#12395a;
 
     margin-bottom:25px;
 
@@ -340,13 +368,16 @@ a {
 
 .hero-text p {
 
+
     font-size:20px;
 
-    color:#536777;
+    color:#587083;
 
     margin-bottom:35px;
 
+
 }
+
 
 
 
@@ -368,9 +399,10 @@ a {
 
 
 
-/* ==============================
-   BOTONES
-================================ */
+
+/* =====================================
+   BUTTON
+===================================== */
 
 
 .button {
@@ -386,9 +418,7 @@ a {
 
     border-radius:12px;
 
-    font-weight:600;
-
-    transition:.3s;
+    font-weight:bold;
 
 
 }
@@ -398,7 +428,7 @@ a {
 .button:hover {
 
 
-    background:#064d75;
+    background:#06577f;
 
 
 }
@@ -408,9 +438,10 @@ a {
 
 
 
-/* ==============================
-   TARJETAS INFORMACIÓN
-================================ */
+
+/* =====================================
+   INFO CARDS
+===================================== */
 
 
 .info-grid {
@@ -422,13 +453,14 @@ a {
 
     repeat(3,1fr);
 
+
     gap:25px;
 
-    padding:70px 0;
+
+    padding:60px 0;
 
 
 }
-
 
 
 
@@ -437,209 +469,9 @@ a {
 
     background:white;
 
-    padding:35px;
+    padding:30px;
 
     border-radius:18px;
-
-
-    box-shadow:
-
-    0 10px 30px rgba(0,0,0,.08);
-
-
-}
-
-
-
-.icon {
-
-    font-size:40px;
-
-    margin-bottom:20px;
-
-}
-
-
-
-
-.info-card h3 {
-
-    color:#123b5a;
-
-    margin-bottom:12px;
-
-}
-
-
-
-
-
-
-
-/* ==============================
-   TITULOS
-================================ */
-
-
-.section-title {
-
-
-    text-align:center;
-
-    margin-bottom:40px;
-
-
-}
-
-
-
-.section-title h2 {
-
-
-    font-size:38px;
-
-    color:#123b5a;
-
-}
-
-
-
-.section-title p {
-
-
-    color:#617585;
-
-}
-
-
-
-
-
-
-/* ==============================
-   LIBROS
-================================ */
-
-
-.books-grid {
-
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(3,1fr);
-
-    gap:30px;
-
-    margin-bottom:80px;
-
-
-}
-
-
-
-.book-card {
-
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:18px;
-
-    text-align:center;
-
-
-    box-shadow:
-
-    0 10px 30px rgba(0,0,0,.08);
-
-
-}
-
-
-
-.book-card img {
-
-
-    height:330px;
-
-    width:100%;
-
-    object-fit:cover;
-
-    border-radius:12px;
-
-    margin-bottom:20px;
-
-
-}
-
-
-
-.book-card h3 {
-
-
-    color:#123b5a;
-
-    margin-bottom:15px;
-
-
-}
-
-
-
-.price {
-
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    color:#16803c;
-
-    margin-bottom:20px;
-
-
-}
-
-
-
-
-
-
-/* ==============================
-   TRASTORNOS
-================================ */
-
-
-.disorder-grid {
-
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(5,1fr);
-
-    gap:20px;
-
-    margin-bottom:80px;
-
-
-}
-
-
-
-.disorder-card {
-
-
-    background:white;
-
-    border-radius:16px;
-
-    overflow:hidden;
 
 
     box-shadow:
@@ -651,12 +483,224 @@ a {
 
 
 
+.info-card h3 {
+
+
+    color:#12395a;
+
+    margin:15px 0;
+
+
+}
+
+
+
+.icon {
+
+
+    font-size:40px;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   TITLES
+===================================== */
+
+
+.section-title {
+
+
+    text-align:center;
+
+    margin:40px 0;
+
+
+}
+
+
+
+.section-title h2 {
+
+
+    color:#12395a;
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   BOOKS
+===================================== */
+
+
+.books-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:30px;
+
+
+    margin-bottom:70px;
+
+
+}
+
+
+
+
+.book-card {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:18px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.book-card img {
+
+
+    width:100%;
+
+
+    height:330px;
+
+
+    object-fit:cover;
+
+
+    border-radius:12px;
+
+
+}
+
+
+
+.book-card h3 {
+
+
+    color:#12395a;
+
+    margin:20px 0;
+
+
+}
+
+
+
+.price {
+
+
+    font-size:24px;
+
+    color:#16803c;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+/* =====================================
+   DISORDERS
+===================================== */
+
+
+.disorder-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(5,1fr);
+
+
+    gap:20px;
+
+
+    margin-bottom:80px;
+
+
+}
+
+
+
+
+.disorder-card {
+
+
+    background:white;
+
+
+    border-radius:16px;
+
+
+    overflow:hidden;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
 .disorder-card img {
 
 
     width:100%;
 
-    height:180px;
+
+    height:170px;
+
 
     object-fit:cover;
 
@@ -668,9 +712,10 @@ a {
 .disorder-card h3 {
 
 
-    padding:18px;
+    padding:15px;
 
-    color:#123b5a;
+
+    color:#12395a;
 
 
 }
@@ -680,9 +725,9 @@ a {
 
 
 
-/* ==============================
+/* =====================================
    FOOTER
-================================ */
+===================================== */
 
 
 .footer {
@@ -690,23 +735,14 @@ a {
 
     background:#062d49;
 
+
     color:white;
+
 
     padding:45px 0;
 
+
     text-align:center;
-
-
-}
-
-
-
-.footer h3 {
-
-
-    font-size:28px;
-
-    margin-bottom:10px;
 
 
 }
@@ -716,7 +752,7 @@ a {
 .footer-links {
 
 
-    margin-top:25px;
+    margin-top:20px;
 
 
 }
@@ -728,8 +764,6 @@ a {
 
     margin:0 15px;
 
-    color:white;
-
 
 }
 
@@ -740,28 +774,18 @@ a {
 
 
 
-/* ==============================
+/* =====================================
    TABLET
-================================ */
+===================================== */
 
 
 @media(max-width:1000px){
 
 
-.navigation {
+.hero-container {
 
 
-    gap:12px;
-
-
-}
-
-
-
-.hero-text h1 {
-
-
-    font-size:45px;
+    grid-template-columns:1fr;
 
 
 }
@@ -771,7 +795,7 @@ a {
 .info-grid {
 
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
 
 
 }
@@ -807,10 +831,9 @@ a {
 
 
 
-
-/* ==============================
+/* =====================================
    MOBILE
-================================ */
+===================================== */
 
 
 @media(max-width:750px){
@@ -839,30 +862,31 @@ a {
 
 
 
-
 .navigation {
 
 
     display:none;
 
+
     position:absolute;
+
 
     top:85px;
 
+
     left:0;
+
 
     width:100%;
 
+
     background:white;
 
-    flex-direction:column;
 
     padding:25px;
 
 
-    box-shadow:
-
-    0 10px 30px rgba(0,0,0,.15);
+    flex-direction:column;
 
 
 }
@@ -879,35 +903,16 @@ a {
 
 
 
-
 .dropdown-menu {
 
 
     position:static;
 
-    box-shadow:none;
 
     width:100%;
 
 
-}
-
-
-
-
-.hero-grid {
-
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.hero {
-
-
-    padding:50px 0;
+    box-shadow:none;
 
 
 }
@@ -917,27 +922,7 @@ a {
 .hero-text h1 {
 
 
-    font-size:38px;
-
-
-}
-
-
-
-.hero-text p {
-
-
-    font-size:17px;
-
-
-}
-
-
-
-.info-grid {
-
-
-    grid-template-columns:1fr;
+    font-size:40px;
 
 
 }
@@ -958,16 +943,6 @@ a {
 
 
     grid-template-columns:1fr;
-
-
-}
-
-
-
-.brand span {
-
-
-    font-size:20px;
 
 
 }
